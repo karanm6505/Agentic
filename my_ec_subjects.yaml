@@ -1,0 +1,250 @@
+- semester_number: 1
+  subjects:
+    - subject: Calculus I
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Introduction to differential and integral calculus, essential for engineering analysis.
+      assessments: Exams, quizzes, and assignments.
+    - subject: Physics I (Mechanics)
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Fundamental principles of mechanics, including motion, forces, and energy.
+      assessments: Exams, problem sets, and lab reports.
+    - subject: Introduction to Programming
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Basic programming concepts and skills, typically using a language like Python or C++.
+      assessments: Programming assignments and projects.
+    - subject: Electrical Circuit Analysis I
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Introduction to circuit elements, circuit laws, and analysis techniques.
+      assessments: Exams, problem sets, and lab exercises.
+    - subject: Engineering Graphics and Design
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Principles of technical drawing and 3D modeling, essential for engineering design.
+      assessments: Drawing assignments and design projects.
+- semester_number: 2
+  subjects:
+    - subject: Calculus II
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Advanced calculus topics, including integration techniques and applications.
+      assessments: Exams, quizzes, and assignments.
+    - subject: Physics II (Electricity and Magnetism)
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Principles of electricity, magnetism, and electromagnetic fields.
+      assessments: Exams, problem sets, and lab reports.
+    - subject: Data Structures and Algorithms
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Fundamental data structures and algorithms, important for efficient programming.
+      assessments: Programming assignments and projects.
+    - subject: Electrical Circuit Analysis II
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Advanced circuit analysis techniques, including AC circuits and transient analysis.
+      assessments: Exams, problem sets, and lab exercises.
+    - subject: Digital Logic Design
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Design of digital circuits, Boolean algebra, and logic gates.
+      assessments: Exams, lab exercises, and design projects.
+- semester_number: 3
+  subjects:
+    - subject: Differential Equations
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Solving ordinary differential equations, with applications in engineering.
+      assessments: Exams, quizzes, and assignments.
+    - subject: Signals and Systems I
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Introduction to signals and systems, including time-domain analysis.
+      assessments: Exams, problem sets, and lab exercises.
+    - subject: Microprocessors and Microcontrollers
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Architecture and programming of microprocessors and microcontrollers.
+      assessments: Exams, programming assignments, and lab projects.
+    - subject: Electronic Devices I
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Semiconductor device physics and operation, diodes, and transistors.
+      assessments: Exams, problem sets, and lab exercises.
+    - subject: Probability and Statistics for Engineers
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Probability theory and statistical methods relevant to engineering applications.
+      assessments: Exams, assignments, and projects.
+- semester_number: 4
+  subjects:
+    - subject: Numerical Methods
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Numerical techniques for solving engineering problems.
+      assessments: Exams, programming assignments, and projects.
+    - subject: Signals and Systems II
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Frequency-domain analysis of signals and systems, including Fourier transforms.
+      assessments: Exams, problem sets, and lab exercises.
+    - subject: Communication Systems I
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Introduction to analog and digital communication systems.
+      assessments: Exams, assignments, and lab projects.
+    - subject: Electronic Devices II
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Amplifier design and analysis, including operational amplifiers.
+      assessments: Exams, problem sets, and lab exercises.
+    - subject: Control Systems I
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Introduction to control systems, including feedback control and stability analysis.
+      assessments: Exams, assignments, and projects.
+- semester_number: 5
+  subjects:
+    - subject: Digital Signal Processing
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Theory and application of digital signal processing techniques.
+      assessments: Exams, assignments, and projects.
+    - subject: Communication Systems II
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Advanced topics in digital communication, including modulation and demodulation.
+      assessments: Exams, assignments, and projects.
+    - subject: Antennas and Propagation
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Antenna theory, design, and wave propagation.
+      assessments: Exams, assignments, and design projects.
+    - elective_name: Elective 1
+      options:
+        - subject: Wireless Communication
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Principles of wireless communication systems, including cellular networks.
+          assessments: Exams, projects, and presentations.
+        - subject: Embedded Systems
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Design and implementation of embedded systems, including hardware and software.
+          assessments: Programming assignments and design projects.
+        - subject: Microwave Engineering
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Microwave components, circuits, and systems.
+          assessments: Exams, assignments, and design projects.
+        - subject: Optical Fiber Communication
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Principles of optical fiber communication systems.
+          assessments: Exams, assignments, and lab reports.
+        - subject: VLSI Design
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Design and implementation of very-large-scale integrated circuits.
+          assessments: Design projects and presentations.
+    - elective_name: Elective 2
+      options:
+        - subject: Power Electronics
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Design and analysis of power electronic circuits.
+          assessments: Exams, assignments, and design projects.
+        - subject: Robotics
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Introduction to robotics, including kinematics, dynamics, and control.
+          assessments: Programming assignments and robotics projects.
+        - subject: Image Processing
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Image processing techniques and applications.
+          assessments: Programming assignments and project reports.
+        - subject: Digital Image Processing
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Advanced image processing techniques.
+          assessments: Exams, projects, and presentations.
+        - subject: Radar Systems
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Principles and applications of radar systems.
+          assessments: Exams, assignments, and project.
+- semester_number: 6
+  subjects:
+    - subject: Engineering Ethics and Professionalism
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Ethical considerations and professional responsibilities in engineering.
+      assessments: Exams, case studies, and presentations.
+    - subject: Senior Design Project I
+      level: Undergraduate
+      duration_weeks: 16
+      focus: First part of the capstone design project, including project proposal and design.
+      assessments: Project proposal, design documents, and progress reports.
+    - subject: Project Management
+      level: Undergraduate
+      duration_weeks: 16
+      focus: Principles of project management, including planning, scheduling, and budgeting.
+      assessments: Exams, case studies, and project management assignments.
+    - elective_name: Elective 3
+      options:
+        - subject: Advanced Communication Systems
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Advanced topics in communication systems, including MIMO and OFDM.
+          assessments: Exams, assignments, and project reports.
+        - subject: Advanced Digital Signal Processing
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Advanced topics in digital signal processing.
+          assessments: Exams, projects, and presentations.
+        - subject: Artificial Intelligence
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Introduction to artificial intelligence concepts and techniques.
+          assessments: Exams, programming assignments, and project reports.
+        - subject: Telecommunications Networks
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Network architectures, protocols, and technologies.
+          assessments: Exams, assignments, and project reports.
+        - subject: Wireless Sensor Networks
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Design and implementation of wireless sensor networks.
+          assessments: Programming assignments and design projects.
+    - elective_name: Elective 4
+      options:
+        - subject: Satellite Communication
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Principles and applications of satellite communication systems.
+          assessments: Exams, assignments, and design projects.
+        - subject: Biomedical Instrumentation
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Application of electronics to biomedical engineering.
+          assessments: Exams, projects, and presentations.
+        - subject: Internet of Things (IoT)
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Principles and applications of the Internet of Things.
+          assessments: Programming assignments and design projects.
+        - subject: Renewable Energy Systems
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Renewable energy technologies and their applications.
+          assessments: Exams, assignments, and design projects.
+        - subject: Senior Design Project II
+          level: Undergraduate
+          duration_weeks: 16
+          focus: Second part of the capstone design project, including implementation and testing.
+          assessments: Final project report, presentation, and demonstration.

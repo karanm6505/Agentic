@@ -1,0 +1,15 @@
+- subject: "Artificial Intelligence Fundamentals"
+  level: "Undergraduate"
+  duration_weeks: 14
+  focus: "Introduction to AI concepts, problem-solving, and basic machine learning."
+  assessments: "Weekly assignments, a midterm, and a final project."
+- subject: "Advanced Algorithms"
+  level: "Graduate"
+  duration_weeks: 12
+  focus: "Design and analysis of advanced algorithms, including graph theory, dynamic programming, and computational complexity."
+  assessments: "Bi-weekly problem sets, a final exam, and a research presentation."
+- subject: "Introduction to Data Science with Python"
+  level: "Undergraduate"
+  duration_weeks: 10
+  focus: "Practical data analysis, visualization, and machine learning using Python libraries."
+  assessments: "Coding labs, a data visualization project, and a final data analysis report." 
