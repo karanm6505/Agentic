@@ -1,250 +1,250 @@
 - semester_number: 1
   subjects:
-    - subject: Introduction to Programming
-      level: Undergraduate
+    - subject: "Introduction to Programming"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Fundamentals of programming using Python.
-      assessments: Exams, assignments, and coding projects.
-    - subject: Linear Algebra
-      level: Undergraduate
+      focus: "Fundamental programming concepts using Python, covering data structures and algorithms."
+      assessments: "Coding assignments, quizzes, and a final exam."
+    - subject: "Discrete Mathematics"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Vectors, matrices, and their applications in AI/ML.
-      assessments: Exams and problem sets.
-    - subject: Calculus I
-      level: Undergraduate
+      focus: "Mathematical foundations for computer science, including logic, set theory, and graph theory."
+      assessments: "Problem sets, midterm exam, and a final exam."
+    - subject: "Linear Algebra"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Differential and integral calculus.
-      assessments: Exams and quizzes.
-    - subject: Discrete Mathematics
-      level: Undergraduate
+      focus: "Vector spaces, matrices, eigenvalues, and linear transformations, essential for machine learning."
+      assessments: "Homework assignments, quizzes, and a final exam."
+    - subject: "Calculus I"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Logic, sets, and combinatorics.
-      assessments: Exams and assignments.
-    - subject: Introduction to AI/ML
-      level: Undergraduate
+      focus: "Single-variable calculus, including limits, derivatives, and integrals."
+      assessments: "Problem sets, midterm exam, and a final exam."
+    - subject: "Introduction to AI and ML"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Overview of AI/ML concepts, history, and applications.
-      assessments: Exams and projects.
+      focus: "Overview of AI and ML concepts, history, applications, and ethical considerations."
+      assessments: "Essays, presentations, and a final exam."
 - semester_number: 2
   subjects:
-    - subject: Data Structures and Algorithms
-      level: Undergraduate
+    - subject: "Data Structures and Algorithms"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Fundamental data structures and algorithm design.
-      assessments: Exams, assignments, and programming projects.
-    - subject: Calculus II
-      level: Undergraduate
+      focus: "Advanced data structures and algorithm design techniques."
+      assessments: "Coding projects, quizzes, and a final exam."
+    - subject: "Probability and Statistics"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Multivariable calculus and applications.
-      assessments: Exams and quizzes.
-    - subject: Probability and Statistics
-      level: Undergraduate
+      focus: "Probability theory, statistical inference, and hypothesis testing."
+      assessments: "Problem sets, data analysis projects, and a final exam."
+    - subject: "Calculus II"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Probability distributions and statistical inference.
-      assessments: Exams and assignments.
-    - subject: Machine Learning Fundamentals
-      level: Undergraduate
+      focus: "Multivariable calculus, including partial derivatives, multiple integrals, and vector calculus."
+      assessments: "Problem sets, midterm exam, and a final exam."
+    - subject: "Object-Oriented Programming"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Supervised and unsupervised learning techniques.
-      assessments: Exams, assignments, and coding projects.
-    - subject: Artificial Intelligence
-      level: Undergraduate
+      focus: "Object-oriented programming principles and design patterns using Java or C++."
+      assessments: "Coding projects, quizzes, and a final exam."
+    - subject: "Database Management Systems"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Search, knowledge representation, and reasoning.
-      assessments: Exams and projects.
+      focus: "Database design, SQL, and database management systems."
+      assessments: "Database design project, SQL queries, and a final exam."
 - semester_number: 3
   subjects:
-    - subject: Database Systems
-      level: Undergraduate
+    - subject: "Machine Learning Fundamentals"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Database design, implementation, and management.
-      assessments: Exams and projects.
-    - subject: Numerical Methods
-      level: Undergraduate
+      focus: "Supervised and unsupervised learning algorithms, model evaluation, and feature engineering."
+      assessments: "Coding assignments, projects, and a final exam."
+    - subject: "Artificial Intelligence"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Numerical techniques for solving mathematical problems.
-      assessments: Exams and assignments.
-    - subject: Deep Learning
-      level: Undergraduate
+      focus: "Search algorithms, knowledge representation, and reasoning."
+      assessments: "Programming assignments, projects, and a final exam."
+    - subject: "Data Mining"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Neural networks and deep learning architectures.
-      assessments: Exams, assignments, and coding projects.
-    - subject: Reinforcement Learning
-      level: Undergraduate
+      focus: "Data preprocessing, association rule mining, and clustering techniques."
+      assessments: "Data analysis projects, presentations, and a final exam."
+    - subject: "Software Engineering"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Markov decision processes and reinforcement learning algorithms.
-      assessments: Exams and projects.
-    - subject: Computer Vision
-      level: Undergraduate
+      focus: "Software development lifecycle, agile methodologies, and software testing."
+      assessments: "Group project, code reviews, and a final exam."
+    - subject: "Ethics in AI"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Image processing and computer vision techniques.
-      assessments: Exams and projects.
+      focus: "Ethical considerations in AI development and deployment, including bias, fairness, and privacy."
+      assessments: "Essays, debates, and a final project."
 - semester_number: 4
   subjects:
-    - subject: Data Mining
-      level: Undergraduate
+    - subject: "Deep Learning"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Techniques for extracting patterns from large datasets.
-      assessments: Exams and projects.
-    - subject: Natural Language Processing
-      level: Undergraduate
+      focus: "Neural networks, convolutional neural networks, and recurrent neural networks."
+      assessments: "Coding assignments, projects, and a final exam."
+    - subject: "Natural Language Processing"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Text processing and natural language understanding.
-      assessments: Exams and projects.
-    - subject: Ethics and AI
-      level: Undergraduate
+      focus: "Text processing, language modeling, and machine translation."
+      assessments: "Coding assignments, projects, and a final exam."
+    - subject: "Computer Vision"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Ethical considerations in AI development and deployment.
-      assessments: Exams, essays, and presentations.
-    - subject: Software Engineering
-      level: Undergraduate
+      focus: "Image processing, object detection, and image segmentation."
+      assessments: "Coding assignments, projects, and a final exam."
+    - subject: "Reinforcement Learning"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Software development principles and practices.
-      assessments: Exams and projects.
-    - subject: AI Hardware and Systems
-      level: Undergraduate
+      focus: "Markov decision processes, Q-learning, and deep reinforcement learning."
+      assessments: "Coding assignments, projects, and a final exam."
+    - subject: "Big Data Analytics"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: AI-specific hardware and system architectures.
-      assessments: Exams and projects.
+      focus: "Big data technologies, MapReduce, and Spark."
+      assessments: "Data analysis projects, presentations, and a final exam."
 - semester_number: 5
   subjects:
-    - subject: AI Project Management
-      level: Undergraduate
+    - subject: "Advanced Machine Learning"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Managing AI projects from inception to deployment.
-      assessments: Project proposals, reports, and presentations.
-    - subject: Advanced Machine Learning
-      level: Undergraduate
+      focus: "Advanced topics in machine learning, such as Bayesian methods, kernel methods, and ensemble methods."
+      assessments: "Research paper, presentation, and a final exam."
+    - subject: "AI Planning and Reasoning"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Advanced topics in machine learning.
-      assessments: Exams, projects, and research papers.
-    - subject: Research Methods in AI/ML
-      level: Undergraduate
+      focus: "Automated planning, constraint satisfaction, and knowledge representation."
+      assessments: "Programming assignments, projects, and a final exam."
+    - subject: "Robotics"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Research methodologies, literature review, and experimental design.
-      assessments: Research proposals and reports.
-    - elective_name: Elective 1
+      focus: "Robot kinematics, dynamics, and control."
+      assessments: "Programming assignments, projects, and a final exam."
+    - elective_name: "AI Applications Electives"
       options:
-        - subject: Robotics
-          level: Undergraduate
+        - subject: "AI in Healthcare"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Robot kinematics, dynamics, and control.
-          assessments: Exams and projects.
-        - subject: Time Series Analysis
-          level: Undergraduate
+          focus: "Application of AI and ML techniques to healthcare problems."
+          assessments: "Project, presentation, and report."
+        - subject: "AI in Finance"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Analyzing time-series data and forecasting.
-          assessments: Exams and projects.
-        - subject: Bayesian Methods
-          level: Undergraduate
+          focus: "Application of AI and ML techniques to finance problems."
+          assessments: "Project, presentation, and report."
+        - subject: "AI in Autonomous Vehicles"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Bayesian inference and its applications in AI/ML.
-          assessments: Exams and projects.
-        - subject: Game Theory
-          level: Undergraduate
+          focus: "AI and ML for self-driving cars."
+          assessments: "Project, presentation, and report."
+        - subject: "AI in Cybersecurity"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Strategic decision-making and game theory models.
-          assessments: Exams and project.
-        - subject: AI and Society
-          level: Undergraduate
+          focus: "Using AI for threat detection and security."
+          assessments: "Project, presentation, and report."
+        - subject: "AI in Game Development"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Impact of AI on society, policy, and economics.
-          assessments: Essays and presentations.
-    - elective_name: Elective 2
+          focus: "AI techniques for creating intelligent game agents."
+          assessments: "Project, presentation, and report."
+    - elective_name: "ML Specialization Electives"
       options:
-        - subject: Advanced Deep Learning
-          level: Undergraduate
+        - subject: "Time Series Analysis"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Advanced topics in deep learning architectures and applications.
-          assessments: Projects and research papers.
-        - subject: Explainable AI (XAI)
-          level: Undergraduate
+          focus: "Analyzing and forecasting time series data."
+          assessments: "Project, presentation, and report."
+        - subject: "Causal Inference"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Techniques for making AI models more transparent and interpretable.
-          assessments: Projects and presentations.
-        - subject: Healthcare Applications of AI
-          level: Undergraduate
+          focus: "Inferring causal relationships from data."
+          assessments: "Project, presentation, and report."
+        - subject: "Recommender Systems"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: AI applications in medical imaging, diagnostics, and drug discovery.
-          assessments: Case studies and projects.
-        - subject: Financial Applications of AI
-          level: Undergraduate
+          focus: "Building recommender systems."
+          assessments: "Project, presentation, and report."
+        - subject: "Generative Models"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: AI applications in finance, including fraud detection and algorithmic trading.
-          assessments: Projects and presentations.
-        - subject: Information Retrieval
-          level: Undergraduate
+          focus: "Generative adversarial networks and variational autoencoders."
+          assessments: "Project, presentation, and report."
+        - subject: "Explainable AI"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Search algorithms and information retrieval techniques.
-          assessments: Exams and projects.
+          focus: "Making AI models more transparent and interpretable."
+          assessments: "Project, presentation, and report."
 - semester_number: 6
   subjects:
-    - subject: Capstone Project
-      level: Undergraduate
+    - subject: "AI Research Project"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Independent research project in AI/ML.
-      assessments: Project report, presentation, and demonstration.
-    - subject: AI in Industry
-      level: Undergraduate
+      focus: "Independent research project in AI or ML."
+      assessments: "Thesis proposal, progress reports, and a final thesis."
+    - subject: "AI Ethics and Policy"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Practical applications of AI in various industries.
-      assessments: Case studies and presentations.
-    - subject: Future of AI
-      level: Undergraduate
+      focus: "In-depth analysis of ethical and policy implications of AI."
+      assessments: "Research paper, presentation, and a final exam."
+    - subject: "AI Entrepreneurship"
+      level: "Undergraduate"
       duration_weeks: 16
-      focus: Emerging trends and future directions in AI/ML.
-      assessments: Research papers and presentations.
-    - elective_name: Elective 3
+      focus: "Starting and managing AI-driven businesses."
+      assessments: "Business plan, pitch presentation, and a final report."
+    - elective_name: "Advanced AI Electives"
       options:
-        - subject: Advanced Computer Vision
-          level: Undergraduate
+        - subject: "Multi-Agent Systems"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Advanced topics in computer vision.
-          assessments: Projects and research papers.
-        - subject: Advanced Natural Language Processing
-          level: Undergraduate
+          focus: "Design and analysis of multi-agent systems."
+          assessments: "Project, presentation, and report."
+        - subject: "Knowledge Representation and Reasoning"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Advanced topics in natural language processing.
-          assessments: Projects and research papers.
-        - subject: AI for Cybersecurity
-          level: Undergraduate
+          focus: "Advanced techniques for representing knowledge and reasoning with it."
+          assessments: "Project, presentation, and report."
+        - subject: "Cognitive Robotics"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: AI applications in cybersecurity.
-          assessments: Projects and presentations.
-        - subject: AI for Sustainability
-          level: Undergraduate
+          focus: "Integrating AI and robotics for cognitive tasks."
+          assessments: "Project, presentation, and report."
+        - subject: "Human-Computer Interaction"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: AI applications to address sustainability challenges.
-          assessments: Projects and presentations.
-        - subject: Human-Robot Interaction
-          level: Undergraduate
+          focus: "Designing user-friendly AI systems."
+          assessments: "Project, presentation, and report."
+        - subject: "AI and the Future of Work"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Design and evaluation of human-robot interaction systems.
-          assessments: Projects and presentations.
-    - elective_name: Elective 4
+          focus: "Impact of AI on the job market and workforce."
+          assessments: "Project, presentation, and report."
+    - elective_name: "Advanced ML Electives"
       options:
-        - subject: Special Topics in AI/ML
-          level: Undergraduate
+        - subject: "Deep Generative Models"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Emerging topics in AI/ML.
-          assessments: Projects and presentations.
-        - subject: Internship
-          level: Undergraduate
+          focus: "Advanced deep learning techniques for generative modeling."
+          assessments: "Project, presentation, and report."
+        - subject: "Federated Learning"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Practical experience in an AI/ML-related field.
-          assessments: Internship report and presentation.
-        - subject: Thesis
-          level: Undergraduate
+          focus: "Training machine learning models on decentralized data."
+          assessments: "Project, presentation, and report."
+        - subject: "Graph Neural Networks"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: In-depth research on a specific AI/ML topic.
-          assessments: Thesis and defense.
-        - subject: Federated Learning
-          level: Undergraduate
+          focus: "Applying neural networks to graph-structured data."
+          assessments: "Project, presentation, and report."
+        - subject: "Transfer Learning"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Methods and applications of federated learning.
-          assessments: Projects and presentations.
-        - subject: Quantum Machine Learning
-          level: Undergraduate
+          focus: "Transferring knowledge from one task to another."
+          assessments: "Project, presentation, and report."
+        - subject: "Meta-Learning"
+          level: "Undergraduate"
           duration_weeks: 16
-          focus: Introduction to quantum computing and its applications to machine learning.
-          assessments: Projects and presentations.
+          focus: "Learning to learn."
+          assessments: "Project, presentation, and report."

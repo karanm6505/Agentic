@@ -68,9 +68,7 @@ def main():
         sys.exit(1)
     finally:
         # --- Cleanup: Remove temporary subject file ---
-        if os.path.exists(subject_output_file):
-            os.remove(subject_output_file)
-            print(f"Cleaned up temporary file: {subject_output_file}")
+        pass # No cleanup, temporary file will be retained
 
 if __name__ == "__main__":
     main() 

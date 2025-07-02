@@ -1,136 +1,137 @@
 **
 # Course Syllabus
 ## Course Title: Computer Networks
-**Course Code:** CS 340
+**Course Code:** CS340
 **Credits:** 3
 **Semester:** Fall 2024
-**Instructor:** Dr. Eleanor Vance
-**Contact:** eleanor.vance@university.edu
-**Office Hours:** Tuesdays and Thursdays 2:00 PM - 3:00 PM, or by appointment
+**Instructor:** [Instructor Name Placeholder]
+**Contact:** instructor.email@university.edu
+**Office Hours:** Tuesdays & Thursdays 2:00 PM - 3:00 PM or By Appointment
 
 ### Course Description:
-This course provides a comprehensive introduction to the principles of computer networking. Students will explore network architectures, protocols, and the underlying technologies that enable communication across various networks, including the Internet. Topics covered will include the Open Systems Interconnection (OSI) model, Transmission Control Protocol/Internet Protocol (TCP/IP), network security, and wireless networks. Students will gain hands-on experience through laboratory assignments and projects, solidifying their understanding of network concepts.
+This course provides a comprehensive introduction to the fundamental concepts and principles of computer networks. Students will explore network architectures, protocols, and technologies, with a strong emphasis on the TCP/IP protocol suite. The course will cover topics such as network layers, addressing, routing, transport protocols, and network security. Hands-on lab exercises will reinforce theoretical knowledge and provide practical experience in network configuration and troubleshooting.
 
 ### Prerequisites:
-CS 101 - Introduction to Programming
+Introduction to Programming, Data Structures and Algorithms
 
 ### Learning Objectives:
-1.  Explain the fundamental concepts of computer networking, including network topologies and architectures.
-2.  Differentiate between the layers of the OSI and TCP/IP models and describe their functions.
-3.  Analyze the characteristics and functionalities of various network protocols, such as TCP, UDP, HTTP, and DNS.
-4.  Implement basic network configurations using routers and switches.
-5.  Evaluate network performance and identify potential bottlenecks.
-6.  Apply security principles to protect network resources.
-7.  Design and implement a small-scale network for a given scenario.
+1.  Analyze the layered architecture of computer networks and describe the functions of each layer.
+2.  Implement network protocols using programming tools.
+3.  Evaluate the performance of different network protocols and architectures.
+4.  Design and configure network devices and systems.
+5.  Apply security principles and techniques to protect network resources.
+6.  Compare and contrast various network topologies and their characteristics.
 
 ### Required Textbooks:
-- Kurose, J.F. and Ross, K.W., *Computer Networking: A Top-Down Approach*, Pearson, 8th Edition, 2021 (ISBN: 978-0134874175)
+- Kurose, J. F. & Ross, K. W., *Computer Networking: A Top-Down Approach*, Pearson, 8th Edition, 2021 (ISBN: 978-0136676387)
 
 ### Recommended Readings:
-- "RFCs (Request for Comments)" from the Internet Engineering Task Force (IETF) - available online at www.ietf.org
+-  RFCs (Request for Comments) available at: [https://www.rfc-editor.org/](https://www.rfc-editor.org/)
+-  "Network Security Protocols" by Charlie Kaufman, Radia Perlman, Mike Speciner, *Network Security Protocols*, 2002.
 
 ### Weekly Schedule:
 **Week 1: Introduction to Computer Networks**
-- Topics: Overview of computer networks, network topologies, the Internet, network applications.
-- Readings: Chapter 1 of Kurose and Ross
-- Activities: Introduction to the course, discussion of network applications, lab setup.
+- Topics: What is a network? Network edge and core, access networks, physical media, packet switching, delay, loss, and throughput in packet-switched networks.
+- Readings: Chapter 1 of Kurose & Ross
+- Activities: Discussion on network applications and architectures.
 - Due: N/A
 
 **Week 2: Application Layer**
-- Topics: Principles of network applications, HTTP, FTP, SMTP, DNS.
-- Readings: Chapter 2 of Kurose and Ross
-- Activities: Lab: Web server configuration.
-- Due: N/A
+- Topics: Principles of network applications, application-layer protocols (HTTP, FTP, SMTP, DNS).
+- Readings: Chapter 2 of Kurose & Ross
+- Activities: Lab: HTTP request/response using a browser.
+- Due: Assignment 1: Analyzing HTTP headers
 
-**Week 3: Transport Layer - Introduction**
-- Topics: Transport layer services, multiplexing and demultiplexing, UDP.
-- Readings: Chapter 3 of Kurose and Ross
-- Activities: Discussion: UDP vs. TCP.
+**Week 3: Transport Layer - Introduction & UDP**
+- Topics: Transport-layer services, multiplexing and demultiplexing, UDP, principles of reliable data transfer.
+- Readings: Chapter 3 of Kurose & Ross (Sections 3.1, 3.2)
+- Activities: Discussion: UDP applications and advantages.
 - Due: N/A
 
 **Week 4: Transport Layer - TCP**
-- Topics: TCP connection establishment and termination, flow control, congestion control.
-- Readings: Chapter 3 of Kurose and Ross
+- Topics: TCP connection management, TCP congestion control.
+- Readings: Chapter 3 of Kurose & Ross (Sections 3.3, 3.4)
 - Activities: Lab: TCP client-server implementation.
-- Due: N/A
+- Due: Assignment 2: Implement a simple TCP server
 
 **Week 5: Network Layer - Introduction**
-- Topics: Network layer services, routing principles, IP.
-- Readings: Chapter 4 of Kurose and Ross
-- Activities: Discussion: Routing algorithms.
+- Topics: Network layer services, forwarding and routing, IP protocol, IPv4 addressing.
+- Readings: Chapter 4 of Kurose & Ross (Sections 4.1, 4.2)
+- Activities: Discussion on IP address classes and subnetting.
 - Due: N/A
 
 **Week 6: Network Layer - Routing Algorithms**
-- Topics: Routing algorithms, Distance Vector, Link State.
-- Readings: Chapter 4 of Kurose and Ross
-- Activities: Lab: Router configuration and packet forwarding.
+- Topics: Routing algorithms (distance vector, link state), routing in the Internet.
+- Readings: Chapter 4 of Kurose & Ross (Sections 4.3, 4.4)
+- Activities: Lab: Implementing a distance vector routing simulation.
+- Due: Assignment 3: Implement a simple routing protocol
+
+**Week 7: Network Layer - IPv6 & Addressing**
+- Topics: IPv6, ICMP, routing protocols in the Internet.
+- Readings: Chapter 4 of Kurose & Ross (Sections 4.5, 4.6)
+- Activities: Discussion on IPv6 advantages and challenges.
 - Due: N/A
 
-**Week 7: Network Layer - IP Addressing**
-- Topics: IP addressing, subnetting, CIDR.
-- Readings: Chapter 4 of Kurose and Ross
-- Activities: Problem-solving: IP address allocation.
-- Due: N/A
-
-**Week 8: Data Link Layer - Introduction**
-- Topics: Data link layer services, error detection and correction, MAC addresses.
-- Readings: Chapter 5 of Kurose and Ross
-- Activities: Midterm Exam
+**Week 8: Midterm Exam**
+- Topics: All topics covered in Weeks 1-7.
+- Readings: Review Chapters 1-4 of Kurose & Ross
+- Activities: Exam
 - Due: Midterm Exam
 
-**Week 9: Data Link Layer - Ethernet**
-- Topics: Ethernet, CSMA/CD, Ethernet switches.
-- Readings: Chapter 5 of Kurose and Ross
-- Activities: Lab: Ethernet switch configuration.
+**Week 9: Link Layer - Introduction**
+- Topics: Link layer services, error detection and correction, multiple access protocols.
+- Readings: Chapter 5 of Kurose & Ross (Sections 5.1, 5.2)
+- Activities: Discussion: MAC addresses and Ethernet.
 - Due: N/A
 
-**Week 10: Wireless and Mobile Networks**
-- Topics: Wireless links, Wi-Fi, mobility, mobile IP.
-- Readings: Chapter 6 of Kurose and Ross
-- Activities: Discussion: Wireless security.
+**Week 10: Link Layer - Ethernet**
+- Topics: Ethernet, hubs, switches, VLANs.
+- Readings: Chapter 5 of Kurose & Ross (Sections 5.3, 5.4)
+- Activities: Lab: Configuring Ethernet switches and VLANs.
+- Due: Assignment 4: Ethernet Switch Configuration
+
+**Week 11: Wireless and Mobile Networks**
+- Topics: Wireless links, 802.11 wireless LANs, mobility management.
+- Readings: Chapter 6 of Kurose & Ross
+- Activities: Discussion on wireless security protocols.
 - Due: N/A
 
-**Week 11: Network Security**
-- Topics: Principles of network security, cryptography, authentication, firewalls.
-- Readings: Chapter 7 of Kurose and Ross
-- Activities: Lab: Firewall configuration.
+**Week 12: Network Security - Introduction**
+- Topics: Principles of network security, cryptography, authentication, message integrity.
+- Readings: Chapter 7 of Kurose & Ross (Sections 7.1, 7.2)
+- Activities: Introduction to common network attacks.
 - Due: N/A
 
-**Week 12: Multimedia Networking**
-- Topics: Multimedia networking applications, streaming, real-time protocols.
-- Readings: Chapter 8 of Kurose and Ross
-- Activities: Discussion: Quality of Service (QoS).
+**Week 13: Network Security - Security Protocols**
+- Topics: Security protocols (SSL/TLS, IPsec), firewalls, intrusion detection systems.
+- Readings: Chapter 7 of Kurose & Ross (Sections 7.3, 7.4)
+- Activities: Lab: Configuring a simple firewall.
+- Due: Assignment 5: Firewall configuration and testing
+
+**Week 14: Network Management**
+- Topics: Network management protocols (SNMP), network monitoring, troubleshooting.
+- Readings: Chapter 8 of Kurose & Ross
+- Activities: Discussion on network performance monitoring tools.
 - Due: N/A
 
-**Week 13: Network Management**
-- Topics: Network management principles, SNMP.
-- Readings: Chapter 9 of Kurose and Ross
-- Activities: Lab: Network monitoring tools.
+**Week 15: Cloud Computing and Network Virtualization**
+- Topics: Introduction to cloud computing, virtualization, Software-Defined Networking (SDN).
+- Readings: Selected articles and research papers.
+- Activities: Guest lecture on SDN.
 - Due: N/A
 
-**Week 14: Project Presentations**
-- Topics: Student project presentations.
-- Readings: N/A
-- Activities: Project presentations.
-- Due: Project Presentation
-
-**Week 15: Advanced Topics**
-- Topics: Software Defined Networking (SDN), Network Function Virtualization (NFV).
-- Readings: Selected research papers (provided by instructor).
-- Activities: Discussion: Future of networking.
-- Due: N/A
-
-**Week 16: Final Exam Review and Exam**
-- Topics: Course review and exam.
-- Readings: Review all chapters.
-- Activities: Exam review session.
-- Due: Final Exam
+**Week 16: Review and Final Project Presentations**
+- Topics: Review of all course topics, student project presentations.
+- Readings: Review all chapters of Kurose & Ross
+- Activities: Final Project presentations.
+- Due: Final Project
 
 ### Assessment Breakdown:
-- Exams: 40% (Midterm: 20%, Final: 20%)
-- Lab Assignments: 30% (6 lab assignments, each contributing equally)
-- Projects: 20% (Project proposal, implementation, and presentation)
-- Participation: 10% (Class discussions and in-class activities)
+-   Assignments: 20% (5 assignments)
+-   Lab Exercises: 20% (Participation and completion of lab assignments)
+-   Midterm Exam: 25%
+-   Final Exam: 25%
+-   Class Participation: 10%
 
 ### Grading Scale:
 A: 90-100%
