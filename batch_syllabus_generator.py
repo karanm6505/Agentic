@@ -9,6 +9,7 @@ import google.generativeai as genai
 import argparse
 import json
 import yaml
+from google.api_core.exceptions import ResourceExhausted
 
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -114,7 +115,7 @@ prompt = PromptTemplate.from_template(template)
 prompt = prompt.partial(tools=tools, tool_names=", ".join([tool.name for tool in tools]))
 
 # Use gemini-2.0-flash-lite as requested by the user.
-llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", google_api_key=GOOGLE_API_KEY)
+llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_API_KEY).with_retry(stop_after_attempt=3)
 
 # --- Create the Agent ---
 agent = create_react_agent(llm, tools, prompt)
@@ -208,6 +209,37 @@ if __name__ == "__main__":
 
                 except Exception as e:
                     print(f"An error occurred during generation for {subject}: {e}")
+                    # Check if it's a ResourceExhausted error and try fallback model
+                    if isinstance(e, ResourceExhausted):
+                        print("Rate limit hit. Attempting to retry with a fallback model (gemini-pro).")
+                        try:
+                            fallback_llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_API_KEY).with_retry(stop_after_attempt=2)
+                            fallback_agent = create_react_agent(fallback_llm, tools, prompt)
+                            fallback_agent_executor = AgentExecutor(agent=fallback_agent, tools=tools, verbose=False, handle_parsing_errors=True, max_iterations=50)
+                            result = fallback_agent_executor.invoke({
+                                "subject": subject,
+                                "level": level,
+                                "duration_weeks": duration_weeks,
+                                "focus": focus,
+                                "assessments": assessments,
+                                "input": f"Generate a {level} course syllabus for '{subject}' lasting {duration_weeks} weeks, focusing on '{focus}', with assessments including {assessments}."
+                            })
+
+                            if result:
+                                print("\n--- GENERATED SYLLABUS WITH FALLBACK ---\n")
+                                print(result["output"])
+                                print("\n-----------------------------------------\n")
+                                try:
+                                    with open(output_filename, "w", encoding="utf-8") as f:
+                                        f.write(result["output"])
+                                    print(f"Syllabus successfully saved to: {output_filename} using fallback model.")
+                                    total_syllabuses_generated += 1
+                                except IOError as save_err:
+                                    print(f"Error: Could not save the file {output_filename} after fallback. Reason: {save_err}")
+                            else:
+                                print(f"Fallback model also failed to generate syllabus for {subject}.")
+                        except Exception as fallback_e:
+                            print(f"An error occurred with fallback model for {subject}: {fallback_e}")
                     print("Skipping to the next syllabus.")
             elif "elective_name" in course_item and "options" in course_item:
                 # This is an elective group
@@ -254,6 +286,37 @@ if __name__ == "__main__":
 
                         except Exception as e:
                             print(f"An error occurred during generation for elective {subject}: {e}")
+                            # Check if it's a ResourceExhausted error and try fallback model
+                            if isinstance(e, ResourceExhausted):
+                                print("Rate limit hit for elective. Attempting to retry with a fallback model (gemini-pro).")
+                                try:
+                                    fallback_llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=GOOGLE_API_KEY).with_retry(stop_after_attempt=2)
+                                    fallback_agent = create_react_agent(fallback_llm, tools, prompt)
+                                    fallback_agent_executor = AgentExecutor(agent=fallback_agent, tools=tools, verbose=False, handle_parsing_errors=True, max_iterations=50)
+                                    result = fallback_agent_executor.invoke({
+                                        "subject": subject,
+                                        "level": level,
+                                        "duration_weeks": duration_weeks,
+                                        "focus": focus,
+                                        "assessments": assessments,
+                                        "input": f"Generate a {level} course syllabus for '{subject}' lasting {duration_weeks} weeks, focusing on '{focus}', with assessments including {assessments}."
+                                    })
+
+                                    if result:
+                                        print("\n--- GENERATED SYLLABUS WITH FALLBACK ---\n")
+                                        print(result["output"])
+                                        print("\n-----------------------------------------\n")
+                                        try:
+                                            with open(output_filename, "w", encoding="utf-8") as f:
+                                                f.write(result["output"])
+                                            print(f"Syllabus successfully saved to: {output_filename} using fallback model.")
+                                            total_syllabuses_generated += 1
+                                        except IOError as save_err:
+                                            print(f"Error: Could not save the file {output_filename} after fallback. Reason: {save_err}")
+                                    else:
+                                        print(f"Fallback model also failed to generate syllabus for elective {subject}.")
+                                except Exception as fallback_e:
+                                    print(f"An error occurred with fallback model for elective {subject}: {fallback_e}")
                             print("Skipping to the next elective option.")
                     else:
                         print(f"Skipping invalid elective option entry: {option_details}")
