@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  syllabus-generator:
+    build: .
+    ports:
+      - "8080:5000"
+    volumes:
+      # Mount syllabuses directory to persist generated content
+      - ./syllabuses:/app/syllabuses
+      # Mount yaml files for configuration
+      - ./courses.yaml:/app/courses.yaml
+      - ./my_aiml_subjects.yaml:/app/my_aiml_subjects.yaml
+      - ./my_ec_subjects.yaml:/app/my_ec_subjects.yaml
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
+
+  syllabus-generator-dev:
+    build: .
+    ports:
+      - "5002:5000"
+    volumes:
+      # Mount entire project for development
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+      - FLASK_DEBUG=1
+    command: python app.py
+    restart: unless-stopped
