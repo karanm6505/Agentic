@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Distributed Systems
 **Course Code:** CS457

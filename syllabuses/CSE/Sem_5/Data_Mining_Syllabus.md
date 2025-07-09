@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Data Mining
 **Course Code:** CS456

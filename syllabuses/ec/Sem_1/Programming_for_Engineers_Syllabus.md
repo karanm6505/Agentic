@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Programming for Engineers
 **Course Code:** CS101

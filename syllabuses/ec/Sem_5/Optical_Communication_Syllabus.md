@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Optical Communication
 **Course Code:** EE345

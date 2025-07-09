@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Calculus II
 **Course Code:** MATH 202

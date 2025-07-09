@@ -1,4 +1,3 @@
-**
 ```markdown
 # Course Syllabus
 ## Course Title: Network Analysis and Synthesis

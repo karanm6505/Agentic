@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Cryptography
 **Course Code:** CS405

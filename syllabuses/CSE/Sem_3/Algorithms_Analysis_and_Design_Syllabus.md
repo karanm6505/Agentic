@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Algorithms Analysis and Design
 **Course Code:** CS301

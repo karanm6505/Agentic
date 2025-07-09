@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Antennas and Wave Propagation
 **Course Code:** EE330

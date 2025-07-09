@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Parallel Computing
 **Course Code:** CS421

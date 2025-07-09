@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Analog Communication
 **Course Code:** EE340

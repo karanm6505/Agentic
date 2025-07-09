@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: RF Integrated Circuit Design
 **Course Code:** EE 432

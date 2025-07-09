@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Object-Oriented Programming
 **Course Code:** CS201

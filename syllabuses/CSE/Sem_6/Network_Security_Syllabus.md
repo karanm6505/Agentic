@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Network Security
 **Course Code:** CS450

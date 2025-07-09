@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Signals and Systems
 **Course Code:** EE201

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Data Visualization
 **Course Code:** DS101

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Instrumentation and Measurement
 **Course Code:** EE 342 (Example)

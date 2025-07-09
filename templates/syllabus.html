@@ -5,25 +5,27 @@
 {% block content %}
     <div class="syllabus-detail-container">
         <div class="syllabus-header">
-            <div class="breadcrumb">
-                <a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a>
-                <i class="fas fa-chevron-right"></i>
-                <span>{{ title }}</span>
-            </div>
-            <h1 class="syllabus-title">
-                <i class="fas fa-file-alt"></i>
-                {{ title }}
-            </h1>
-            <div class="syllabus-actions">
-                <button class="action-btn" onclick="toggleTOC()">
-                    <i class="fas fa-list"></i> Table of Contents
-                </button>
-                <button class="action-btn" onclick="window.print()">
-                    <i class="fas fa-print"></i> Print
-                </button>
-                <button class="action-btn" onclick="toggleReadingMode()">
-                    <i class="fas fa-eye"></i> Reading Mode
-                </button>
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>{{ title }}</span>
+                </div>
+                <h1 class="syllabus-title">
+                    <i class="fas fa-file-alt"></i>
+                    {{ title }}
+                </h1>
+                <div class="syllabus-actions">
+                    <button class="action-btn" onclick="toggleTOC()">
+                        <i class="fas fa-list"></i> Table of Contents
+                    </button>
+                    <button class="action-btn" onclick="printSyllabus()">
+                        <i class="fas fa-print"></i> Print/Save as PDF
+                    </button>
+                    <button class="action-btn" onclick="toggleReadingMode()">
+                        <i class="fas fa-eye"></i> Reading Mode
+                    </button>
+                </div>
             </div>
         </div>
         
@@ -41,10 +43,12 @@
         </div>
         
         <div class="syllabus-footer">
-            <a href="{{ url_for('index') }}" class="back-button">
-                <i class="fas fa-arrow-left"></i>
-                Back to Home
-            </a>
+            <div class="container">
+                <a href="{{ url_for('index') }}" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Home
+                </a>
+            </div>
         </div>
     </div>
 
@@ -130,6 +134,25 @@
             }
         }
         
+        function printSyllabus() {
+            // Simple and clean print function
+            const content = document.getElementById('syllabus-content');
+            const title = document.querySelector('.syllabus-title').textContent.trim();
+            const originalTitle = document.title;
+            
+            // Set document title for print/PDF
+            document.title = title + ' - Course Syllabus';
+            content.setAttribute('data-title', title);
+            
+            // Trigger print dialog
+            window.print();
+            
+            // Restore original title
+            setTimeout(() => {
+                document.title = originalTitle;
+            }, 500);
+        }
+        
         // Smooth scrolling for anchor links
         function smoothScrollToAnchor() {
             const links = document.querySelectorAll('a[href^="#"]');
@@ -149,31 +172,7 @@
         
         // Add keyboard shortcuts
         function addKeyboardShortcuts() {
-            document.addEventListener('keydown', function(e) {
-                // Press 'T' to toggle TOC
-                if (e.key === 't' || e.key === 'T') {
-                    if (!e.target.matches('input, textarea')) {
-                        e.preventDefault();
-                        toggleTOC();
-                    }
-                }
-                
-                // Press 'R' to toggle reading mode
-                if (e.key === 'r' || e.key === 'R') {
-                    if (!e.target.matches('input, textarea')) {
-                        e.preventDefault();
-                        toggleReadingMode();
-                    }
-                }
-                
-                // Press 'P' to print
-                if (e.key === 'p' || e.key === 'P') {
-                    if (!e.target.matches('input, textarea')) {
-                        e.preventDefault();
-                        window.print();
-                    }
-                }
-            });
+            // Keyboard shortcuts have been removed for cleaner user experience
         }
         
         // Initialize on page load
@@ -181,11 +180,24 @@
             generateTOC();
             updateReadingProgress();
             smoothScrollToAnchor();
-            addKeyboardShortcuts();
+            
+            // Set document title for print
+            const content = document.getElementById('syllabus-content');
+            const title = document.querySelector('.syllabus-title').textContent.trim();
+            content.setAttribute('data-title', title);
             
             // Update reading progress on scroll
             window.addEventListener('scroll', updateReadingProgress);
             window.addEventListener('resize', updateReadingProgress);
+            
+            // Add print event listener to optimize for PDF
+            window.addEventListener('beforeprint', function() {
+                // Ensure all content is visible for printing
+                const toc = document.getElementById('toc');
+                if (toc.style.display === 'block') {
+                    toc.style.display = 'none';
+                }
+            });
         });
     </script>
 {% endblock %} 

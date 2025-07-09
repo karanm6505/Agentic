@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: MEMS and Microsystems
 **Course Code:** ENGR 345

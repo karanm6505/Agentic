@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Advanced Algorithms
 **Course Code:** CS401

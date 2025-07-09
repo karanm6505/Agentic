@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Wireless Communication
 **Course Code:** EE345

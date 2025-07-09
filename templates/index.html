@@ -1,60 +1,180 @@
 {% extends "base.html" %}
 
-{% block title %}Home - Syllabus Generator{% endblock %}
+{% block title %}AI-Powered Syllabus Generator{% endblock %}
 
 {% block content %}
-    <div class="homepage-container">
-        <div class="hero-section">
-            <h1><i class="fas fa-book-open"></i> Comprehensive Syllabus Generator</h1>
-            <p class="hero-subtitle">Explore comprehensive course syllabuses for various degree programs</p>
-        </div>
-
-        {% if message %}
-            <div class="message {{ 'error' if 'Error' in message or 'Failed' in message else 'success' }}">
-                {{ message }}
-            </div>
-        {% endif %}
-
-        <section class="view-syllabuses-section">
-            <h2><i class="fas fa-folder-open"></i> Generated Syllabuses</h2>
-            {% if syllabus_structure %}
-                <div class="syllabus-list">
-                    {% for degree, semesters in syllabus_structure.items() %}
-                        <div class="degree-card">
-                            <div class="degree-header">
-                                <i class="fas fa-graduation-cap"></i>
-                                <h3>{{ degree.replace('_', ' ') | upper }}</h3>
-                            </div>
-                            <div class="semesters-grid">
-                                {% for sem, subjects in semesters.items() %}
-                                    <div class="semester-card">
-                                        <div class="semester-header">
-                                            <i class="fas fa-calendar-alt"></i>
-                                            <h4>{{ sem.replace('_', ' ') }}</h4>
-                                        </div>
-                                        <ul class="subjects-list">
-                                            {% for subject in subjects %}
-                                                <li>
-                                                    <a href="{{ url_for('view_syllabus', syllabus_path=degree + '/' + sem + '/' + subject.replace(' ', '_') + '_Syllabus') }}">
-                                                        <i class="fas fa-file-alt"></i>
-                                                        {{ subject }}
-                                                    </a>
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                {% endfor %}
-                            </div>
+    <div class="landing-page">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <i class="fas fa-robot"></i>
+                    AI-Powered Syllabus Generator
+                </h1>
+                <p class="hero-subtitle">
+                    Transform education with intelligent curriculum design. Generate comprehensive, 
+                    industry-aligned syllabuses for any degree program using advanced AI.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#syllabuses" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> View Syllabuses
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="mini-card">
+                            <i class="fas fa-brain"></i>
+                            <span>AI-Powered</span>
                         </div>
-                    {% endfor %}
+                        <div class="mini-card">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Industry-Aligned</span>
+                        </div>
+                        <div class="mini-card">
+                            <i class="fas fa-cogs"></i>
+                            <span>Comprehensive</span>
+                        </div>
+                    </div>
                 </div>
-            {% else %}
-                <div class="no-syllabuses">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <h3>No syllabuses found</h3>
-                    <p>Please generate curricula using the backend scripts to see content here.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-star"></i> Key Features</h2>
+                    <p>Revolutionizing curriculum development with cutting-edge AI technology</p>
                 </div>
-            {% endif %}
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>AI-Powered Generation</h3>
+                        <p>Uses Google Gemini AI and LangChain to create detailed, structured syllabuses tailored to modern educational needs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Dependency Mapping</h3>
+                        <p>Automatically generates visual dependency graphs showing prerequisite relationships between courses.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Multiple Programs</h3>
+                        <p>Supports Computer Science, AI/ML, Electronics & Communication, and custom degree programs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Batch Processing</h3>
+                        <p>Generate entire curricula for degree programs efficiently with our automated batch processing system.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Clean, modern web interface that works seamlessly across all devices and screen sizes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-docker"></i>
+                        </div>
+                        <h3>Docker Ready</h3>
+                        <p>Containerized deployment with Docker support for easy scaling and deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Subjects Generated</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Degree Programs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Semesters per Program</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">AI</div>
+                        <div class="stat-label">Powered</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Syllabuses Section -->
+        <section id="syllabuses" class="syllabuses-section">
+            <div class="container">
+                {% if message %}
+                    <div class="message {{ 'error' if 'Error' in message or 'Failed' in message else 'success' }}">
+                        {{ message }}
+                    </div>
+                {% endif %}
+
+                <div class="section-header">
+                    <h2><i class="fas fa-folder-open"></i> Generated Syllabuses</h2>
+                    <p>Explore our comprehensive collection of AI-generated course syllabuses</p>
+                </div>
+
+                {% if syllabus_structure %}
+                    <div class="syllabus-list">
+                        {% for degree, semesters in syllabus_structure.items() %}
+                            <div class="degree-card">
+                                <div class="degree-header">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <h3>{{ degree.replace('_', ' ') | upper }}</h3>
+                                    <span class="semester-count">{{ semesters|length }} semesters</span>
+                                </div>
+                                <div class="semesters-grid">
+                                    {% for sem, subjects in semesters.items() %}
+                                        <div class="semester-card">
+                                            <div class="semester-header">
+                                                <i class="fas fa-calendar-alt"></i>
+                                                <h4>{{ sem.replace('_', ' ') }}</h4>
+                                                <span class="subject-count">{{ subjects|length }} subjects</span>
+                                            </div>
+                                            <ul class="subjects-list">
+                                                {% for subject in subjects %}
+                                                    <li>
+                                                        <a href="{{ url_for('view_syllabus', syllabus_path=degree + '/' + sem + '/' + subject.replace(' ', '_') + '_Syllabus') }}">
+                                                            <i class="fas fa-file-alt"></i>
+                                                            {{ subject }}
+                                                        </a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="no-syllabuses">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>No syllabuses found</h3>
+                        <p>Please generate curricula using the backend scripts to see content here.</p>
+                    </div>
+                {% endif %}
+            </div>
         </section>
     </div>
 {% endblock %} 

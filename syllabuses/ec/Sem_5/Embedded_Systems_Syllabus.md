@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Embedded Systems
 **Course Code:** EE 345

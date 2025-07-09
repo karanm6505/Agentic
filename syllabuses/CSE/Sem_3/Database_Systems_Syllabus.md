@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Database Systems
 **Course Code:** CS345

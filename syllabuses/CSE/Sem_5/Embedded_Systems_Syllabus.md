@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Embedded Systems Design
 **Course Code:** ECE345

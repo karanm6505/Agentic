@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Real-Time Systems
 **Course Code:** ECE 457

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Microprocessors and Microcontrollers
 **Course Code:** EE 330

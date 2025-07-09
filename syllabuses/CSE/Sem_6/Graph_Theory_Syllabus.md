@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Graph Theory
 **Course Code:** MATH345

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Linear Algebra
 **Course Code:** MATH 221

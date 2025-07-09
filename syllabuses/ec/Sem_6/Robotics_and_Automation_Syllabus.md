@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Robotics and Automation
 **Course Code:** ROBT 201

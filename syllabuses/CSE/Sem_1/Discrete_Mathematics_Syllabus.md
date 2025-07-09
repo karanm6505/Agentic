@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Discrete Mathematics
 **Course Code:** MATH 231

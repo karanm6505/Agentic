@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Cybersecurity Fundamentals
 **Course Code:** CS101

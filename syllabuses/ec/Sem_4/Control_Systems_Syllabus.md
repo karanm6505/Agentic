@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Control Systems
 **Course Code:** EE301

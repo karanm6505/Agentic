@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Digital Forensics
 **Course Code:** CS425

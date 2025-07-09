@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Analog Integrated Circuit Design
 **Course Code:** EE325

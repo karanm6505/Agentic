@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Introduction to Quantum Computing
 **Course Code:** QC101

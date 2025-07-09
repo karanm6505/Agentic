@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Advanced Digital Communication
 **Course Code:** EE432

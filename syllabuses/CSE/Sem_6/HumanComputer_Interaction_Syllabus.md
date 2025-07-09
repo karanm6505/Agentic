@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Human-Computer Interaction
 **Course Code:** CS345

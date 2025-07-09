@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Project Management and Professional Ethics
 **Course Code:** PMPE 301

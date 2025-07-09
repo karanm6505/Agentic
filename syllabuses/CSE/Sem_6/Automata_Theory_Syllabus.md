@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Automata Theory
 **Course Code:** CS341

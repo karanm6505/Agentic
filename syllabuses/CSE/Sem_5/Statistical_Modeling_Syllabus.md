@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Statistical Modeling
 **Course Code:** STAT301

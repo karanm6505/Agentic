@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: 5G and Beyond
 **Course Code:** EE 345

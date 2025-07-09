@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Biomedical Instrumentation
 **Course Code:** BIOE 340

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Information Theory and Coding
 **Course Code:** EE330

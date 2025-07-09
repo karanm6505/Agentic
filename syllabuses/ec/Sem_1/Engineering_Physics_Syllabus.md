@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Engineering Physics for Electronics and Communication Engineers
 **Course Code:** ENPH 101

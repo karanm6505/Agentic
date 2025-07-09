@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Probability and Statistics
 **Course Code:** STAT 101

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Digital Logic Design
 **Course Code:** EE 201

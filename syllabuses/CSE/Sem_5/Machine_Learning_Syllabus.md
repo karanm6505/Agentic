@@ -1,4 +1,3 @@
-**
 ```markdown
 # Course Syllabus
 ## Course Title: Introduction to Machine Learning

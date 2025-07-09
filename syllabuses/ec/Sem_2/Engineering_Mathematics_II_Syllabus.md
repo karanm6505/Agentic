@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Engineering Mathematics II
 **Course Code:** MATH 202

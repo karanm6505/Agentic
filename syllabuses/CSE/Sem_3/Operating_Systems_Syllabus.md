@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Operating Systems
 **Course Code:** CS301

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Introduction to Artificial Intelligence
 **Course Code:** CS345

@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header-content">
-                <a href="{{ url_for('index') }}" class="site-title">
-                    <i class="fas fa-graduation-cap"></i>
-                    Syllabus Generator
-                </a>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main class="main-content">
-            {% block content %}{% endblock %}
-        </main>
-        <footer class="footer">
+    <header class="header">
+        <div class="header-content">
+            <a href="{{ url_for('index') }}" class="site-title">
+                <i class="fas fa-graduation-cap"></i>
+                Syllabus Generator
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ url_for('index') }}"><i class="fas fa-home"></i> Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="container">
             <p>&copy; 2025 Syllabus Generator. All rights reserved.</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html> 

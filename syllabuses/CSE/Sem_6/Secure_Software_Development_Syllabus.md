@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Secure Software Development
 **Course Code:** CS450

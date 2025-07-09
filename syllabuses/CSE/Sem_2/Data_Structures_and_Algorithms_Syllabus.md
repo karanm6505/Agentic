@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Data Structures and Algorithms
 **Course Code:** CS201

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Software Architecture
 **Course Code:** SWE301

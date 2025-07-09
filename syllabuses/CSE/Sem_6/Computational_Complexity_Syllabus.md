@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Computational Complexity
 **Course Code:** CS450

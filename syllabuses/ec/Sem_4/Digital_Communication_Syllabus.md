@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Digital Communication
 **Course Code:** EE300

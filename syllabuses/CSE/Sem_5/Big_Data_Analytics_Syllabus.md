@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Big Data Analytics
 **Course Code:** CS401

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Mobile Application Development
 **Course Code:** CS 360

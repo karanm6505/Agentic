@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Deep Learning
 **Course Code:** CS475

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Compiler Design
 **Course Code:** CS450

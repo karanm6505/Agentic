@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Power Electronics
 **Course Code:** EE340

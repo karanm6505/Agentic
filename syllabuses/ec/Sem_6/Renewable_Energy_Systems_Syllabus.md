@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Renewable Energy Systems
 **Course Code:** ENGR 345

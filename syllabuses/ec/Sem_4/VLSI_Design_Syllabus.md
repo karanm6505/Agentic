@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Introduction to VLSI Design
 **Course Code:** EE333

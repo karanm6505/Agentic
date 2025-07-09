@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Software Engineering Principles and Practices
 **Course Code:** SWE301

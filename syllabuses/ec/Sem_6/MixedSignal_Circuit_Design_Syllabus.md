@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Mixed-Signal Circuit Design
 **Course Code:** EE 335

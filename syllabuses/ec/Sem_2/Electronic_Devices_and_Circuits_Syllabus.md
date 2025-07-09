@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Electronic Devices and Circuits
 **Course Code:** EE 201

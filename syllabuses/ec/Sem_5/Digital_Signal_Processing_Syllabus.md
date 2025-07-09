@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Digital Signal Processing
 **Course Code:** EE 330

@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Computer Networks
 **Course Code:** CSCI 360

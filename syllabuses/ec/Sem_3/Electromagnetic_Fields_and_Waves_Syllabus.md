@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Electromagnetic Fields and Waves
 **Course Code:** EE 331

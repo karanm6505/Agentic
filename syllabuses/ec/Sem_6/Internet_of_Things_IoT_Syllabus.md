@@ -1,4 +1,3 @@
-**
 # Course Syllabus
 ## Course Title: Introduction to the Internet of Things (IoT)
 **Course Code:** CS-345
