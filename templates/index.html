@@ -1,10 +1,13 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Home - Syllabus Generator{% endblock %}
 
 {% block content %}
     <div class="homepage-container">
-        <h1>View Syllabuses</h1>
+        <div class="hero-section">
+            <h1><i class="fas fa-book-open"></i> Comprehensive Syllabus Generator</h1>
+            <p class="hero-subtitle">Explore comprehensive course syllabuses for various degree programs</p>
+        </div>
 
         {% if message %}
             <div class="message {{ 'error' if 'Error' in message or 'Failed' in message else 'success' }}">
@@ -12,32 +15,45 @@
             </div>
         {% endif %}
 
-        <section class="view-syllabuses-section card">
-            <h2>Previously Generated Syllabuses</h2>
+        <section class="view-syllabuses-section">
+            <h2><i class="fas fa-folder-open"></i> Generated Syllabuses</h2>
             {% if syllabus_structure %}
                 <div class="syllabus-list">
                     {% for degree, semesters in syllabus_structure.items() %}
                         <div class="degree-card">
-                            <h3>{{ degree.replace('_', ' ') | upper }}</h3>
-                            {% for sem, subjects in semesters.items() %}
-                                <div class="semester-card">
-                                    <h4>{{ sem.replace('_', ' ') }}</h4>
-                                    <ul>
-                                        {% for subject in subjects %}
-                                            <li>
-                                                <a href="{{ url_for('view_syllabus', syllabus_path=degree + '/' + sem + '/' + subject.replace(' ', '_') + '_Syllabus') }}">
-                                                    {{ subject }}
-                                                </a>
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            {% endfor %}
+                            <div class="degree-header">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h3>{{ degree.replace('_', ' ') | upper }}</h3>
+                            </div>
+                            <div class="semesters-grid">
+                                {% for sem, subjects in semesters.items() %}
+                                    <div class="semester-card">
+                                        <div class="semester-header">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <h4>{{ sem.replace('_', ' ') }}</h4>
+                                        </div>
+                                        <ul class="subjects-list">
+                                            {% for subject in subjects %}
+                                                <li>
+                                                    <a href="{{ url_for('view_syllabus', syllabus_path=degree + '/' + sem + '/' + subject.replace(' ', '_') + '_Syllabus') }}">
+                                                        <i class="fas fa-file-alt"></i>
+                                                        {{ subject }}
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endfor %}
+                            </div>
                         </div>
                     {% endfor %}
                 </div>
             {% else %}
-                <p class="no-syllabuses">No syllabuses found. Please generate curricula using the backend scripts.</p>
+                <div class="no-syllabuses">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>No syllabuses found</h3>
+                    <p>Please generate curricula using the backend scripts to see content here.</p>
+                </div>
             {% endif %}
         </section>
     </div>

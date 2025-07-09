@@ -1,4 +1,4 @@
-**
+
 # Course Syllabus
 ## Course Title: Calculus I
 **Course Code:** MATH 101

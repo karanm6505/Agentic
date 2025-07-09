@@ -1,4 +1,4 @@
-**
+
 # Course Syllabus
 ## Course Title: Basic Electrical Engineering
 **Course Code:** EE101

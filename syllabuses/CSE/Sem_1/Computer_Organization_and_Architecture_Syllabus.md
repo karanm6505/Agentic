@@ -1,4 +1,4 @@
-**
+
 # Course Syllabus
 ## Course Title: Computer Organization and Architecture
 **Course Code:** ECE 231

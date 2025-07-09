@@ -58,4 +58,4 @@ def view_syllabus(syllabus_path):
     return render_template('syllabus.html', title=subject_title, content=html_content)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True) 
+    app.run(host='0.0.0.0', port=5001, debug=True) 
