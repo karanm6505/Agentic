@@ -1,4 +1,4 @@
-```markdown
+
 # Course Syllabus
 ## Course Title: Introduction to Programming
 **Course Code:** CS101

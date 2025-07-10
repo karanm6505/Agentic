@@ -847,7 +847,7 @@ body {
     line-height: 1.8;
     color: #4a5568;
     font-size: 1.05rem;
-    max-width: 800px;
+    max-width: none;
 }
 
 .syllabus-content h1 {
@@ -1040,32 +1040,13 @@ body {
     transition: width 0.1s ease;
 }
 
-/* Reading Mode */
-.reading-mode .syllabus-body {
-    grid-template-columns: 1fr;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.reading-mode .table-of-contents {
-    display: none;
-}
-
-.reading-mode .syllabus-content-wrapper {
-    padding: 80px 60px;
-    font-size: 1.1rem;
-    line-height: 2;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.reading-mode .syllabus-content {
-    color: #2d3748;
-    max-width: none;
-}
-
 /* Print Styles */
 @media print {
+    /* Reset everything for print */
+    * {
+        box-sizing: border-box !important;
+    }
+    
     /* Hide all UI elements */
     .header,
     .syllabus-header,
@@ -1077,6 +1058,7 @@ body {
     .action-btn,
     .back-button {
         display: none !important;
+        visibility: hidden !important;
     }
     
     /* Reset page structure */
@@ -1094,14 +1076,22 @@ body {
         background: white !important;
         margin: 0 !important;
         padding: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+        display: block !important;
+        position: static !important;
     }
     
     .syllabus-body {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: none !important;
+        display: block !important;
         max-width: none !important;
         margin: 0 !important;
         padding: 0 !important;
         gap: 0 !important;
+        width: 100% !important;
+        position: static !important;
+        float: none !important;
     }
     
     .syllabus-content-wrapper {
@@ -1112,6 +1102,12 @@ body {
         margin: 0 !important;
         background: white !important;
         max-width: none !important;
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        position: static !important;
+        float: none !important;
+        grid-column: unset !important;
     }
     
     .syllabus-content {
@@ -1120,7 +1116,8 @@ body {
         color: #000 !important;
         max-width: none !important;
         margin: 0 !important;
-        padding: 0.5in !important;
+        padding: 0 !important;
+        width: 100% !important;
     }
     
     /* Add document header */
@@ -1289,7 +1286,7 @@ body {
     
     /* Page settings */
     @page {
-        margin: 0.75in !important;
+        margin: 0.5in !important;
         size: Letter !important;
     }
     
@@ -1308,6 +1305,23 @@ body {
     .syllabus-content h2 + p,
     .syllabus-content h3 + p {
         margin-top: 3pt !important;
+    }
+    
+    /* Override all containers */
+    .container {
+        max-width: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Reset base elements */
+    html, body {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 }
 
 /* Responsive Design */
@@ -1611,4 +1625,18 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #a0aec0;
+}
+
+/* When TOC is hidden, make content full width */
+.syllabus-body:has(.table-of-contents[style*="display: none"]) {
+    grid-template-columns: 1fr;
+}
+
+/* Fallback for browsers that don't support :has() */
+.syllabus-body.toc-hidden {
+    grid-template-columns: 1fr;
+}
+
+.syllabus-body.toc-hidden .table-of-contents {
+    display: none;
 }

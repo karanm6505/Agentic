@@ -22,9 +22,6 @@
                     <button class="action-btn" onclick="printSyllabus()">
                         <i class="fas fa-print"></i> Print/Save as PDF
                     </button>
-                    <button class="action-btn" onclick="toggleReadingMode()">
-                        <i class="fas fa-eye"></i> Reading Mode
-                    </button>
                 </div>
             </div>
         </div>
@@ -105,32 +102,17 @@
         function toggleTOC() {
             const toc = document.getElementById('toc');
             const button = event.target.closest('.action-btn');
+            const syllabusBody = document.querySelector('.syllabus-body');
             
             if (toc.style.display === 'none') {
                 toc.style.display = 'block';
                 button.classList.add('active');
+                syllabusBody.classList.remove('toc-hidden');
                 generateTOC();
             } else {
                 toc.style.display = 'none';
                 button.classList.remove('active');
-            }
-        }
-        
-        function toggleReadingMode() {
-            const body = document.body;
-            const button = event.target.closest('.action-btn');
-            
-            body.classList.toggle('reading-mode');
-            button.classList.toggle('active');
-            
-            // Update button text
-            const icon = button.querySelector('i');
-            if (body.classList.contains('reading-mode')) {
-                icon.className = 'fas fa-eye-slash';
-                button.innerHTML = '<i class="fas fa-eye-slash"></i> Exit Reading Mode';
-            } else {
-                icon.className = 'fas fa-eye';
-                button.innerHTML = '<i class="fas fa-eye"></i> Reading Mode';
+                syllabusBody.classList.add('toc-hidden');
             }
         }
         
@@ -177,6 +159,10 @@
         
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize with TOC hidden and content full-width
+            const syllabusBody = document.querySelector('.syllabus-body');
+            syllabusBody.classList.add('toc-hidden');
+            
             generateTOC();
             updateReadingProgress();
             smoothScrollToAnchor();

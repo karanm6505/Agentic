@@ -26,7 +26,7 @@ def main():
         degree_short_name = "generated_degree"
 
     # --- Step 1: Generate Subjects ---
-    subject_output_file = f"temp_{degree_short_name}_subjects.yaml"
+    subject_output_file = f"{degree_program}_subjects.yaml"
     print(f"\n--- Step 1: Generating subjects for {degree_program} into {subject_output_file} ---")
     try:
         # Ensure python3 is used and pass all arguments correctly
