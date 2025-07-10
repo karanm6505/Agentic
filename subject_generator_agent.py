@@ -4,7 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import AgentExecutor, create_react_agent
 from langchain import tools
 from langchain_core.prompts import PromptTemplate
-from duckduckgo_search import DDGS
+from serpapi import GoogleSearch
 import google.generativeai as genai
 import argparse
 import yaml
@@ -18,18 +18,46 @@ if not GOOGLE_API_KEY:
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # --- Tools ---
-def duckduckgo_search(query: str):
-    """Searches DuckDuckGo for the given query and returns the top result's snippet."""
-    with DDGS() as ddgs:
-        results = ddgs.text(keywords=query, max_results=1)
-        if results and 'snippet' in results[0]:
-            return results[0]['snippet']
-        return "No information found."
+def serpapi_search(query: str):
+    """Searches Google using SerpAPI for the given query and returns the top result's snippet."""
+    try:
+        # Get SerpAPI key from environment
+        serpapi_key = os.getenv("SERPAPI_API_KEY")
+        if not serpapi_key:
+            return "SerpAPI key not found. Please set SERPAPI_API_KEY in your .env file."
+        
+        search = GoogleSearch({
+            "q": query,
+            "api_key": serpapi_key,
+            "num": 1,
+            "safe": "active"
+        })
+        
+        results = search.get_dict()
+        
+        # Check for organic results
+        if 'organic_results' in results and len(results['organic_results']) > 0:
+            result = results['organic_results'][0]
+            if 'snippet' in result:
+                return result['snippet'][:500]  # Limit to 500 chars
+            elif 'title' in result:
+                return result['title']
+        
+        # Check for answer box
+        if 'answer_box' in results and 'snippet' in results['answer_box']:
+            return results['answer_box']['snippet'][:500]
+        
+        return "No information found for this query."
+        
+    except Exception as e:
+        error_msg = str(e)
+        print(f"SerpAPI search failed: {error_msg}")
+        return f"Search failed: {error_msg}"
 
 search_tool = tools.Tool(
-    name="DuckDuckGoSearch",
-    func=duckduckgo_search,
-    description="Useful for searching the web for information, especially about degree curricula or common subjects."
+    name="GoogleSearch",
+    func=serpapi_search,
+    description="Useful for searching Google for information, especially about degree curricula or common subjects."
 )
 
 tools = [search_tool]
@@ -40,7 +68,7 @@ You are an expert academic curriculum designer. Your task is to generate a compr
 
 Here's how you should operate:
 1.  Understand the Degree Program: Carefully read the user's request for the degree program (e.g., "Bachelor of Science in Computer Science").
-2.  Research (if necessary): Use the 'DuckDuckGoSearch' tool to research typical subjects, core courses, and common electives for the specified degree program in a university setting. Look for common curricula structures.
+2.  Use Your Expert Knowledge: You have deep knowledge of standard university curricula. If needed, you MAY use the 'GoogleSearch' tool for additional research, but prioritize your existing knowledge of typical subjects, core courses, and common electives for the specified degree program.
 3.  Generate Subject List: Create a list of exactly 30 subjects (5 subjects per semester for a 6-semester program). For each subject, provide:
     *   `subject`: A concise and clear subject title.
     *   `level`: The academic level (e.g., "Undergraduate", "Graduate", "Elective").
