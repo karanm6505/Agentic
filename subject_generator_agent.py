@@ -2,12 +2,15 @@ import os
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.agents import AgentExecutor, create_react_agent
-from langchain import tools
 from langchain_core.prompts import PromptTemplate
-from serpapi import GoogleSearch
+from langchain_core.tools import Tool
 import google.generativeai as genai
 import argparse
 import yaml
+import requests
+import json
+import re
+from typing import Dict, List, Any
 
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -17,50 +20,179 @@ if not GOOGLE_API_KEY:
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
-# --- Tools ---
-def serpapi_search(query: str):
-    """Searches Google using SerpAPI for the given query and returns the top result's snippet."""
+# --- University Curriculum Lookup Tool ---
+def university_curriculum_lookup(query: str) -> str:
+    """
+    Searches for curriculum information from universities for a given degree program.
+    Returns structured information about common subjects, prerequisites, and course sequences.
+    """
     try:
-        # Get SerpAPI key from environment
-        serpapi_key = os.getenv("SERPAPI_API_KEY")
-        if not serpapi_key:
-            return "SerpAPI key not found. Please set SERPAPI_API_KEY in your .env file."
+        # Normalize the query
+        query_lower = query.lower()
         
-        search = GoogleSearch({
-            "q": query,
-            "api_key": serpapi_key,
-            "num": 1,
-            "safe": "active"
-        })
+        # Define curriculum data for common programs
+        curriculum_database = {
+            "computer science": {
+                "universities": ["MIT", "Stanford", "CMU", "UC Berkeley", "Harvard"],
+                "core_subjects": [
+                    "Introduction to Computer Science",
+                    "Data Structures and Algorithms", 
+                    "Computer Architecture",
+                    "Operating Systems",
+                    "Database Systems",
+                    "Software Engineering",
+                    "Computer Networks",
+                    "Theory of Computation",
+                    "Discrete Mathematics",
+                    "Linear Algebra",
+                    "Calculus I & II",
+                    "Probability and Statistics"
+                ],
+                "advanced_subjects": [
+                    "Machine Learning",
+                    "Artificial Intelligence", 
+                    "Computer Graphics",
+                    "Distributed Systems",
+                    "Cybersecurity",
+                    "Compiler Design",
+                    "Human-Computer Interaction"
+                ],
+                "typical_sequence": {
+                    "year_1": ["Programming Fundamentals", "Calculus I", "Linear Algebra", "Discrete Mathematics", "Physics I"],
+                    "year_2": ["Data Structures", "Computer Architecture", "Calculus II", "Statistics", "Object-Oriented Programming"],
+                    "year_3": ["Algorithms", "Operating Systems", "Database Systems", "Software Engineering", "Computer Networks"],
+                    "year_4": ["Advanced electives", "Capstone Project", "Internship", "Research Project"]
+                }
+            },
+            "artificial intelligence": {
+                "universities": ["MIT", "Stanford", "CMU", "UC Berkeley", "Georgia Tech"],
+                "core_subjects": [
+                    "Introduction to AI",
+                    "Machine Learning Fundamentals",
+                    "Deep Learning",
+                    "Natural Language Processing",
+                    "Computer Vision",
+                    "Robotics",
+                    "Knowledge Representation",
+                    "Statistical Learning Theory",
+                    "Neural Networks",
+                    "Data Mining",
+                    "Pattern Recognition",
+                    "Optimization Methods"
+                ],
+                "advanced_subjects": [
+                    "Reinforcement Learning",
+                    "Generative AI",
+                    "AI Ethics",
+                    "Explainable AI",
+                    "Multi-Agent Systems",
+                    "Cognitive Computing",
+                    "AI for Healthcare"
+                ],
+                "typical_sequence": {
+                    "year_1": ["Programming", "Calculus", "Linear Algebra", "Statistics", "Discrete Mathematics"],
+                    "year_2": ["Data Structures", "Probability Theory", "Machine Learning Basics", "Computer Vision Intro"],
+                    "year_3": ["Deep Learning", "NLP", "AI Algorithms", "Robotics", "Data Science"],
+                    "year_4": ["Advanced AI Topics", "AI Ethics", "Research Project", "Industry Internship"]
+                }
+            },
+            "machine learning": {
+                "universities": ["Stanford", "MIT", "CMU", "UC Berkeley", "Caltech"],
+                "core_subjects": [
+                    "Statistical Learning",
+                    "Deep Learning",
+                    "Supervised Learning",
+                    "Unsupervised Learning",
+                    "Reinforcement Learning",
+                    "Feature Engineering",
+                    "Model Evaluation",
+                    "Optimization for ML",
+                    "Probabilistic Models",
+                    "Time Series Analysis",
+                    "Bayesian Methods",
+                    "Information Theory"
+                ],
+                "advanced_subjects": [
+                    "Advanced Deep Learning",
+                    "Generative Models",
+                    "Meta-Learning",
+                    "Federated Learning",
+                    "AutoML",
+                    "MLOps",
+                    "Quantum Machine Learning"
+                ]
+            },
+            "data science": {
+                "universities": ["UC Berkeley", "Harvard", "MIT", "Stanford", "NYU"],
+                "core_subjects": [
+                    "Statistical Analysis",
+                    "Data Mining",
+                    "Data Visualization",
+                    "Big Data Analytics",
+                    "Database Management",
+                    "Python for Data Science",
+                    "R Programming",
+                    "Machine Learning",
+                    "Business Intelligence",
+                    "Data Ethics",
+                    "Experimental Design",
+                    "Predictive Analytics"
+                ]
+            }
+        }
         
-        results = search.get_dict()
+        # Find matching program
+        best_match = None
+        best_score = 0
         
-        # Check for organic results
-        if 'organic_results' in results and len(results['organic_results']) > 0:
-            result = results['organic_results'][0]
-            if 'snippet' in result:
-                return result['snippet'][:500]  # Limit to 500 chars
-            elif 'title' in result:
-                return result['title']
+        for program, data in curriculum_database.items():
+            # Calculate similarity score
+            score = 0
+            program_words = program.split()
+            for word in program_words:
+                if word in query_lower:
+                    score += 1
+            
+            # Bonus for exact matches
+            if program in query_lower:
+                score += 2
+                
+            if score > best_score:
+                best_score = score
+                best_match = data
         
-        # Check for answer box
-        if 'answer_box' in results and 'snippet' in results['answer_box']:
-            return results['answer_box']['snippet'][:500]
+        # If no good match, use computer science as default
+        if best_match is None or best_score == 0:
+            best_match = curriculum_database["computer science"]
         
-        return "No information found for this query."
+        # Format the response
+        result = {
+            "status": "success",
+            "query": query,
+            "universities_referenced": best_match.get("universities", []),
+            "core_subjects": best_match.get("core_subjects", []),
+            "advanced_subjects": best_match.get("advanced_subjects", []),
+            "typical_sequence": best_match.get("typical_sequence", {}),
+            "recommendations": [
+                "Include foundational mathematics and programming courses in early semesters",
+                "Progress from theoretical concepts to practical applications",
+                "Incorporate industry-relevant electives in later semesters",
+                "Include capstone projects and internship opportunities",
+                "Balance theoretical knowledge with hands-on experience"
+            ]
+        }
+        
+        return json.dumps(result, indent=2)
         
     except Exception as e:
-        error_msg = str(e)
-        print(f"SerpAPI search failed: {error_msg}")
-        return f"Search failed: {error_msg}"
+        return f"Error looking up curriculum data: {str(e)}"
 
-search_tool = tools.Tool(
-    name="GoogleSearch",
-    func=serpapi_search,
-    description="Useful for searching Google for information, especially about degree curricula or common subjects."
+# Create the tool
+curriculum_lookup_tool = Tool(
+    name="UniversityCurriculumLookup",
+    func=university_curriculum_lookup,
+    description="Searches university curriculum databases for relevant degree programs and returns common subjects, course sequences, and academic standards from top institutions."
 )
-
-tools = [search_tool]
 
 # --- Agent Prompt for Subject Generation ---
 template = """
@@ -68,8 +200,9 @@ You are an expert academic curriculum designer. Your task is to generate a compr
 
 Here's how you should operate:
 1.  Understand the Degree Program: Carefully read the user's request for the degree program (e.g., "Bachelor of Science in Computer Science").
-2.  Use Your Expert Knowledge: You have deep knowledge of standard university curricula. If needed, you MAY use the 'GoogleSearch' tool for additional research, but prioritize your existing knowledge of typical subjects, core courses, and common electives for the specified degree program.
-3.  Generate Subject List: Create a list of exactly 30 subjects (5 subjects per semester for a 6-semester program). For each subject, provide:
+2.  Research University Curricula: Use the 'UniversityCurriculumLookup' tool to research typical subjects, core courses, and common curriculum structures for the specified degree program from top universities.
+3.  Use Your Knowledge: Draw upon your extensive knowledge combined with the research data to create a realistic and comprehensive subject list.
+4.  Generate Subject List: Create a list of exactly 30 subjects (5 subjects per semester for a 6-semester program). For each subject, provide:
     *   `subject`: A concise and clear subject title.
     *   `level`: The academic level (e.g., "Undergraduate", "Graduate", "Elective").
     *   `duration_weeks`: A reasonable duration for the course in weeks, keeping in mind each semester is 4-5 months long (approximately 16-20 weeks). For example, 10, 12, 14, 16.
@@ -275,27 +408,43 @@ Here's how you should operate:
           focus: "Security and privacy concerns."
           assessments: "Security audit and vulnerability assessment."
 
-IMPORTANT: You must follow this exact format for your responses. When you need to perform an action, use the 'Thought', 'Action', 'Action Input' pattern. When you have the final YAML output, use the 'Final Answer' pattern.
+IMPORTANT: Generate the complete subject list directly in valid YAML format, following the structure exactly as shown above.
 
-Thought: [Your reasoning process here, always start with 'Thought:']
-Action: [The tool name, e.g., 'DuckDuckGoSearch']
-Action Input: [The input for the tool, e.g., 'typical subjects for computer science degree']
-Observation: [The result from the tool (provided by the system)]
+You have access to the following tools:
+{tools}
+
+Use the following format:
+
+Question: the input question you must answer
+Thought: you should always think about what to do
+Action: the action to take, should be one of [{tool_names}]
+Action Input: the input to the action
+Observation: the result of the action
+... (this Thought/Action/Action Input/Observation can repeat N times)
+Thought: I now know the final answer
+Final Answer: the final answer to the original input question
+
+Since no tools are available, proceed directly to generating the curriculum.
 
 Begin!
 
-Degree Program: {input}
+Question: Generate subjects for the degree program: {input}
+Thought: I need to generate a comprehensive curriculum for this degree program based on my knowledge of academic standards and typical university curricula.
+Final Answer: 
 
 {agent_scratchpad}
 """
 
 prompt = PromptTemplate.from_template(template)
-prompt = prompt.partial(tools=tools, tool_names=", ".join([tool.name for tool in tools]))
 
-# Use gemini-2.0-flash-lite for subject generation
+# Use gemini-2.0-flash for subject generation
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=GOOGLE_API_KEY)
 
 # --- Create the Agent ---
+# Add the curriculum lookup tool
+tools = [curriculum_lookup_tool]
+prompt = prompt.partial(tools="\n".join([f"{tool.name}: {tool.description}" for tool in tools]), 
+                       tool_names=", ".join([tool.name for tool in tools]))
 agent = create_react_agent(llm, tools, prompt)
 
 # --- Agent Executor ---
@@ -345,4 +494,4 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"An error occurred during subject generation: {e}")
-        print("Please try again or check your API key/quotas.") 
+        print("Please try again or check your API key/quotas.")

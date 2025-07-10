@@ -1,0 +1,250 @@
+- semester_number: 1
+  subjects:
+    - subject: "Introduction to Temporal Mechanics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Fundamental principles of time, causality, and the theoretical basis for time travel."
+      assessments: "Exams, problem sets, and participation."
+    - subject: "History of Time Travel Theories"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "A survey of the historical development of ideas related to time travel, from ancient myths to modern physics."
+      assessments: "Essays, presentations, and historical analyses."
+    - subject: "Mathematics for Temporal Physics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Mathematical tools necessary for understanding and manipulating temporal phenomena, including calculus, linear algebra, and differential equations."
+      assessments: "Problem sets, quizzes, and exams."
+    - subject: "Ethical Considerations in Time Travel"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "An exploration of the ethical dilemmas and paradoxes inherent in time travel, including issues of causality, free will, and historical responsibility."
+      assessments: "Essays, debates, and case studies."
+    - subject: "Laboratory Safety and Temporal Anomalies"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to safe laboratory practices when dealing with temporal fields and potential anomalies."
+      assessments: "Lab reports, safety quizzes, and practical demonstrations."
+- semester_number: 2
+  subjects:
+    - subject: "Advanced Temporal Mechanics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Deeper exploration of temporal fields, wormholes, and the theoretical limits of time travel."
+      assessments: "Research papers, simulations, and presentations."
+    - subject: "Temporal Thermodynamics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "The study of energy transfer and entropy in temporal systems, including the thermodynamics of time travel."
+      assessments: "Problem sets, simulations, and exams."
+    - subject: "Temporal Engineering Principles"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to the engineering challenges associated with building and operating time-traveling devices."
+      assessments: "Design projects, simulations, and reports."
+    - subject: "Historical Impact Assessment"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Methods for assessing and mitigating the potential impact of time travel on historical events."
+      assessments: "Case studies, simulations, and presentations."
+    - subject: "Temporal Navigation and Mapping"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Techniques for navigating and mapping the temporal landscape, including the use of temporal coordinates and chronometric instruments."
+      assessments: "Navigation exercises, map creation, and reports."
+- semester_number: 3
+  subjects:
+    - subject: "Quantum Temporal Mechanics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Exploring the quantum aspects of time and their implications for time travel."
+      assessments: "Problem sets, research papers, and presentations."
+    - subject: "Temporal Field Generation"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "The theory and practice of generating and manipulating temporal fields."
+      assessments: "Simulations, lab reports, and design projects."
+    - subject: "Chronometry and Temporal Measurement"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Advanced techniques for measuring time with extreme precision."
+      assessments: "Lab experiments, data analysis, and reports."
+    - subject: "Temporal Paradox Resolution"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Strategies for resolving temporal paradoxes, including the use of alternate timelines and causality manipulation."
+      assessments: "Paradox analysis, simulations, and presentations."
+    - subject: "Temporal Security Protocols"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Developing security protocols to prevent unauthorized time travel and the misuse of temporal technology."
+      assessments: "Security audits, protocol design, and reports."
+- semester_number: 4
+  subjects:
+    - subject: "Advanced Temporal Engineering"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Designing and building advanced time-traveling devices, including temporal engines and navigation systems."
+      assessments: "Design projects, simulations, and prototypes."
+    - subject: "Temporal Resource Management"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Managing the resources required for time travel, including energy, materials, and personnel."
+      assessments: "Resource allocation simulations, reports, and presentations."
+    - subject: "Temporal History Rewriting (Theory)"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Theoretical exploration of altering historical events and its potential consequences. (Note: No practical application.)"
+      assessments: "Essays, debates, and simulations."
+    - subject: "Temporal Communication Systems"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Developing communication systems that can transmit information across time."
+      assessments: "Design projects, simulations, and prototypes."
+    - subject: "Temporal Ecology and Conservation"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Studying the impact of time travel on ecosystems and developing strategies for temporal conservation."
+      assessments: "Research papers, simulations, and presentations."
+- semester_number: 5
+  subjects:
+    - subject: "Temporal Policy and Law"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Developing laws and policies to regulate time travel and prevent its misuse."
+      assessments: "Policy proposals, legal briefs, and debates."
+    - subject: "Temporal Disaster Response"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Planning and preparing for temporal disasters, such as paradoxes, timeline disruptions, and temporal anomalies."
+      assessments: "Disaster response plans, simulations, and reports."
+    - subject: "Advanced Chronometry and Calibration"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Advanced techniques for the calibration of temporal measuring devices and systems."
+      assessments: "Lab experiments, data analysis, and reports."
+    - elective_name: "Temporal Specialization 1"
+      options:
+        - subject: "Temporal Archaeology"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "The study of past civilizations through controlled temporal observation, adhering to strict non-interference protocols."
+          assessments: "Excavation reports, historical analyses, and presentations."
+        - subject: "Temporal Medicine"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "The diagnosis and treatment of diseases and injuries caused by time travel."
+          assessments: "Case studies, medical simulations, and research papers."
+        - subject: "Temporal Economics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "The study of economic systems and their behavior across time."
+          assessments: "Economic models, simulations, and policy analyses."
+        - subject: "Temporal Warfare (Theoretical)"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Theoretical study of strategic advantages and disadvantages of military time travel. (Note: No practical applications.)"
+          assessments: "Strategic analyses, simulations, and presentations."
+        - subject: "Temporal Cartography"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "The creation and maintenance of temporal maps and navigation systems."
+          assessments: "Map creation, navigation exercises, and reports."
+    - elective_name: "Temporal Specialization 2"
+      options:
+        - subject: "Temporal Linguistics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "The study of language evolution and change across time."
+          assessments: "Linguistic analyses, historical research, and presentations."
+        - subject: "Temporal Psychology"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "The study of the psychological effects of time travel on individuals and societies."
+          assessments: "Case studies, psychological assessments, and research papers."
+        - subject: "Temporal Art and Culture"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "The study of art and culture across time, including the impact of time travel on artistic expression."
+          assessments: "Artistic creations, cultural analyses, and presentations."
+        - subject: "Temporal Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "The application of forensic science to crimes involving time travel."
+          assessments: "Crime scene analysis, forensic reports, and presentations."
+        - subject: "Temporal Robotics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Design and development of robots for use in temporal environments."
+          assessments: "Design projects, simulations, and prototypes."
+- semester_number: 6
+  subjects:
+    - subject: "Advanced Temporal Policy and Ethics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Developing ethical guidelines and legal frameworks for responsible time travel."
+      assessments: "Policy proposals, ethical analyses, and debates."
+    - subject: "Temporal Project Management"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Managing complex time travel projects, including resource allocation, risk assessment, and timeline management."
+      assessments: "Project plans, simulations, and reports."
+    - subject: "Future of Temporal Technology"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Exploring potential future developments in time travel technology and their implications for society."
+      assessments: "Research papers, presentations, and future scenarios."
+    - elective_name: "Advanced Temporal Specialization 3"
+      options:
+        - subject: "Advanced Temporal Archaeology"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "In-depth study of specific historical periods using advanced temporal observation techniques."
+          assessments: "Advanced excavation reports, historical reconstructions, and presentations."
+        - subject: "Advanced Temporal Medicine"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Researching and developing new treatments for temporal illnesses and injuries."
+          assessments: "Clinical trials, research papers, and presentations."
+        - subject: "Advanced Temporal Economics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Developing advanced economic models for predicting and managing the economic impact of time travel."
+          assessments: "Economic forecasting, policy analyses, and presentations."
+        - subject: "Applied Temporal Linguistics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Application of temporal linguistics to deciphering ancient languages and understanding language evolution."
+          assessments: "Language analyses, historical translations, and presentations."
+        - subject: "Advanced Temporal Robotics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Designing and building advanced robots for use in extreme temporal environments."
+          assessments: "Design projects, simulations, and prototypes."
+    - elective_name: "Advanced Temporal Specialization 4"
+      options:
+        - subject: "Advanced Temporal Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Advanced techniques for investigating crimes involving temporal manipulation and paradoxes."
+          assessments: "Complex crime scene analyses, forensic reconstructions, and presentations."
+        - subject: "Temporal Resource Optimization"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Methods for optimizing resource utilization in time travel projects, including energy, materials, and personnel."
+          assessments: "Optimization models, simulations, and reports."
+        - subject: "Temporal Risk Management"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Identifying and mitigating risks associated with time travel, including paradoxes, timeline disruptions, and security breaches."
+          assessments: "Risk assessment reports, mitigation plans, and simulations."
+        - subject: "Temporal Data Analysis"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Analyzing large datasets collected from temporal observations and experiments."
+          assessments: "Data analyses, statistical models, and reports."
+        - subject: "Temporal Simulation and Modeling"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Creating and using computer simulations to model temporal phenomena and predict the consequences of time travel."
+          assessments: "Simulation models, validation studies, and reports."

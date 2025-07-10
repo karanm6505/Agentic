@@ -12,18 +12,54 @@ def main():
     degree_program = args.degree_program
     base_output_dir = args.output_dir
 
-    # Generate a simple short name for the degree program for folder creation
-    degree_short_name = "".join(c for c in degree_program if c.isalnum()).lower()
-    if "computer science" in degree_program.lower():
-        degree_short_name = "cs"
-    elif "artificial intelligence" in degree_program.lower() or "machine learning" in degree_program.lower():
-        degree_short_name = "aiml"
-    elif "electronics and communication" in degree_program.lower() or "ec" in degree_program.lower():
-        degree_short_name = "ec"
+    # Generate a unique directory name based on the degree program
+    # Remove common words and create a meaningful short name
+    import re
     
-    if not degree_short_name:
-        print(f"Warning: Could not determine a short name for '{degree_program}'. Using a generic name.")
-        degree_short_name = "generated_degree"
+    # Clean the degree program name
+    cleaned_name = degree_program.lower()
+    
+    # Remove common degree words
+    common_words = ["bachelor", "master", "doctor", "of", "in", "and", "the", "technology", "science", "arts", "engineering"]
+    for word in common_words:
+        cleaned_name = cleaned_name.replace(word, "")
+    
+    # Remove extra spaces and special characters
+    cleaned_name = re.sub(r'[^a-zA-Z0-9\s]', '', cleaned_name)
+    cleaned_name = re.sub(r'\s+', '_', cleaned_name.strip())
+    
+    # If the cleaned name is too short, use a more descriptive approach
+    if len(cleaned_name) < 3:
+        # Extract key terms
+        key_terms = []
+        if "computer science" in degree_program.lower():
+            key_terms.append("computer_science")
+        if "artificial intelligence" in degree_program.lower():
+            key_terms.append("ai")
+        if "machine learning" in degree_program.lower():
+            key_terms.append("ml")
+        if "data science" in degree_program.lower():
+            key_terms.append("data_science")
+        if "electronics" in degree_program.lower():
+            key_terms.append("electronics")
+        if "communication" in degree_program.lower():
+            key_terms.append("communication")
+        if "time travel" in degree_program.lower():
+            key_terms.append("time_travel")
+        if "cybersecurity" in degree_program.lower():
+            key_terms.append("cybersecurity")
+        if "robotics" in degree_program.lower():
+            key_terms.append("robotics")
+        
+        degree_short_name = "_".join(key_terms) if key_terms else "custom_degree"
+    else:
+        degree_short_name = cleaned_name
+    
+    # Ensure the name is not too long
+    if len(degree_short_name) > 50:
+        degree_short_name = degree_short_name[:50].rstrip('_')
+    
+    print(f"Using directory name: {degree_short_name}")
 
     # --- Step 1: Generate Subjects ---
     subject_output_file = f"{degree_program}_subjects.yaml"

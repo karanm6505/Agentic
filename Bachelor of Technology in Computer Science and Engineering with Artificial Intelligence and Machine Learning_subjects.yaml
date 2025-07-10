@@ -1,0 +1,250 @@
+- semester_number: 1
+  subjects:
+    - subject: "Calculus I"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to differential and integral calculus, focusing on functions of a single variable."
+      assessments: "Exams, quizzes, and problem sets."
+    - subject: "Programming Fundamentals"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to programming concepts using a high-level language like Python or Java."
+      assessments: "Programming assignments, quizzes, and a final project."
+    - subject: "Digital Logic Design"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Fundamentals of digital circuits, Boolean algebra, and logic gate design."
+      assessments: "Lab assignments, quizzes, and exams."
+    - subject: "Introduction to Computer Science"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Overview of computer science concepts, history, and applications."
+      assessments: "Essays, presentations, and participation."
+    - subject: "Linear Algebra"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to vectors, matrices, and linear transformations."
+      assessments: "Exams, quizzes, and problem sets."
+- semester_number: 2
+  subjects:
+    - subject: "Calculus II"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Advanced calculus topics including multivariable calculus and differential equations."
+      assessments: "Exams, quizzes, and problem sets."
+    - subject: "Data Structures and Algorithms"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Fundamental data structures and algorithms, including arrays, linked lists, trees, and sorting algorithms."
+      assessments: "Programming assignments, quizzes, and a final project."
+    - subject: "Discrete Mathematics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Mathematical foundations for computer science, including logic, set theory, and graph theory."
+      assessments: "Exams, quizzes, and problem sets."
+    - subject: "Object-Oriented Programming"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Principles of object-oriented programming using a language like Java or C++."
+      assessments: "Programming assignments, quizzes, and a final project."
+    - subject: "Probability and Statistics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to probability theory and statistical inference."
+      assessments: "Exams, quizzes, and data analysis assignments."
+- semester_number: 3
+  subjects:
+    - subject: "Computer Architecture"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Organization and design of computer systems, including CPU, memory, and I/O."
+      assessments: "Exams, lab assignments, and a design project."
+    - subject: "Database Management Systems"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Principles of database design and implementation, including relational databases and SQL."
+      assessments: "Programming assignments, quizzes, and a database design project."
+    - subject: "Algorithms Analysis and Design"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Techniques for designing and analyzing efficient algorithms."
+      assessments: "Exams, programming assignments, and a research paper."
+    - subject: "Operating Systems"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Principles of operating systems, including process management, memory management, and file systems."
+      assessments: "Exams, programming assignments, and a group project."
+    - subject: "Numerical Methods"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Techniques for solving mathematical problems using computers."
+      assessments: "Programming assignments, quizzes, and exams."
+- semester_number: 4
+  subjects:
+    - subject: "Computer Networks"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Principles of computer networks, including protocols, architectures, and security."
+      assessments: "Exams, lab assignments, and a network design project."
+    - subject: "Software Engineering"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Principles and practices of software development."
+      assessments: "Group project, design documents, and presentations."
+    - subject: "Machine Learning Fundamentals"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to machine learning algorithms and techniques."
+      assessments: "Programming assignments, quizzes, and a project."
+    - subject: "Artificial Intelligence"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Fundamental concepts and techniques in artificial intelligence."
+      assessments: "Programming assignments, quizzes, and a project."
+    - subject: "Embedded Systems"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to embedded systems design and programming."
+      assessments: "Lab assignments, quizzes, and a project."
+- semester_number: 5
+  subjects:
+    - subject: "Deep Learning"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to deep learning models and techniques."
+      assessments: "Programming assignments, quizzes, and a project."
+    - subject: "Data Mining"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Techniques for extracting knowledge from large datasets."
+      assessments: "Programming assignments, quizzes, and a project."
+    - subject: "Big Data Technologies"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to big data processing frameworks and technologies."
+      assessments: "Programming assignments, quizzes, and a project."
+    - elective_name: "AI Applications"
+      options:
+        - subject: "Natural Language Processing"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Techniques for processing and understanding human language."
+          assessments: "Programming assignments and a project."
+        - subject: "Computer Vision"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Algorithms for image and video analysis."
+          assessments: "Programming assignments and a project."
+        - subject: "Robotics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Principles of robot design and control."
+          assessments: "Lab assignments and a project."
+        - subject: "AI in Healthcare"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Application of AI techniques to healthcare problems."
+          assessments: "Case studies and a project."
+        - subject: "AI in Finance"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Application of AI techniques to financial problems."
+          assessments: "Case studies and a project."
+    - elective_name: "Advanced Machine Learning"
+      options:
+        - subject: "Reinforcement Learning"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Algorithms for learning optimal control policies."
+          assessments: "Programming assignments and a project."
+        - subject: "Generative Models"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Techniques for generating new data samples."
+          assessments: "Programming assignments and a project."
+        - subject: "Bayesian Machine Learning"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Bayesian approaches to machine learning."
+          assessments: "Programming assignments and a project."
+        - subject: "Time Series Analysis"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Methods for analyzing and forecasting time series data."
+          assessments: "Programming assignments and a project."
+        - subject: "Causal Inference"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Techniques for inferring causal relationships from data."
+          assessments: "Programming assignments and a project."
+- semester_number: 6
+  subjects:
+    - subject: "Cloud Computing"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to cloud computing platforms and services."
+      assessments: "Programming assignments, quizzes, and a project."
+    - subject: "Cybersecurity"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Principles of computer security and cryptography."
+      assessments: "Exams, lab assignments, and a project."
+    - subject: "Ethics in AI and Machine Learning"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Ethical considerations and societal impact of AI and machine learning."
+      assessments: "Essays, presentations, and participation."
+    - elective_name: "Specialized AI Topics"
+      options:
+        - subject: "Explainable AI"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Techniques for making AI models more interpretable."
+          assessments: "Programming assignments and a project."
+        - subject: "Federated Learning"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Algorithms for training models on decentralized data."
+          assessments: "Programming assignments and a project."
+        - subject: "Graph Neural Networks"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Neural networks for processing graph-structured data."
+          assessments: "Programming assignments and a project."
+        - subject: "AI for Social Good"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Application of AI to address social problems."
+          assessments: "Case studies and a project."
+        - subject: "AI and the Future of Work"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Impact of AI on the labor market and future skills."
+          assessments: "Essays and presentations."
+    - elective_name: "Capstone Project"
+      options:
+        - subject: "AI-Driven Healthcare Solution"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Develop an AI solution for a healthcare challenge."
+          assessments: "Project proposal, implementation, and presentation."
+        - subject: "Smart City AI Application"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Design and implement an AI application for a smart city."
+          assessments: "Project proposal, implementation, and presentation."
+        - subject: "AI-Powered Financial Tool"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Create an AI tool for financial analysis or prediction."
+          assessments: "Project proposal, implementation, and presentation."
+        - subject: "AI-Enabled Cybersecurity System"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Develop an AI-based system for detecting and preventing cyberattacks."
+          assessments: "Project proposal, implementation, and presentation."
+        - subject: "AI-Based Recommendation System"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Design and implement a personalized recommendation system."
+          assessments: "Project proposal, implementation, and presentation."

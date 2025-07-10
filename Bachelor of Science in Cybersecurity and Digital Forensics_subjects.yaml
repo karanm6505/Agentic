@@ -1,0 +1,250 @@
+- semester_number: 1
+  subjects:
+    - subject: "Introduction to Cybersecurity"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Overview of cybersecurity principles, threats, and defenses."
+      assessments: "Exams, quizzes, and participation."
+    - subject: "Computer Fundamentals"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Basic computer architecture, operating systems, and networking concepts."
+      assessments: "Labs, assignments, and exams."
+    - subject: "Programming Fundamentals"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to programming concepts using a high-level language like Python or Java."
+      assessments: "Coding assignments, projects, and exams."
+    - subject: "Discrete Mathematics for Computing"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Mathematical foundations for computer science, including logic, set theory, and graph theory."
+      assessments: "Problem sets, quizzes, and exams."
+    - subject: "Digital Literacy and Ethics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Ethical considerations in the digital age, including privacy, security, and intellectual property."
+      assessments: "Essays, presentations, and class discussions."
+- semester_number: 2
+  subjects:
+    - subject: "Network Security"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Fundamentals of network security, including protocols, firewalls, and intrusion detection systems."
+      assessments: "Labs, projects, and exams."
+    - subject: "Operating System Security"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Security mechanisms in operating systems, including access control, virtualization, and sandboxing."
+      assessments: "Assignments, labs, and exams."
+    - subject: "Data Structures and Algorithms"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Fundamental data structures and algorithms for efficient problem-solving."
+      assessments: "Coding assignments, projects, and exams."
+    - subject: "Database Management Systems"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Principles of database design, implementation, and security."
+      assessments: "Assignments, projects, and exams."
+    - subject: "Web Application Security"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Common web application vulnerabilities and security best practices."
+      assessments: "Labs, projects, and exams."
+- semester_number: 3
+  subjects:
+    - subject: "Cryptography"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Principles and applications of cryptography, including symmetric and asymmetric encryption."
+      assessments: "Assignments, projects, and exams."
+    - subject: "Digital Forensics Fundamentals"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to digital forensics principles, tools, and techniques."
+      assessments: "Labs, case studies, and exams."
+    - subject: "Malware Analysis"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Techniques for analyzing and understanding malicious software."
+      assessments: "Labs, projects, and exams."
+    - subject: "Secure Coding Practices"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Developing secure software applications by avoiding common vulnerabilities."
+      assessments: "Coding assignments, projects, and code reviews."
+    - subject: "Legal and Ethical Issues in Cybersecurity"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Legal and ethical frameworks governing cybersecurity and digital forensics."
+      assessments: "Essays, presentations, and class discussions."
+- semester_number: 4
+  subjects:
+    - subject: "Incident Response and Handling"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Planning, detection, containment, and recovery from security incidents."
+      assessments: "Simulations, case studies, and exams."
+    - subject: "Network Forensics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Techniques for collecting and analyzing network traffic for forensic investigations."
+      assessments: "Labs, projects, and exams."
+    - subject: "Mobile Device Forensics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Forensic analysis of mobile devices, including smartphones and tablets."
+      assessments: "Labs, projects, and exams."
+    - subject: "Vulnerability Assessment and Penetration Testing"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Methods for identifying and exploiting vulnerabilities in computer systems and networks."
+      assessments: "Labs, projects, and reports."
+    - subject: "Cloud Security"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Security considerations for cloud computing environments."
+      assessments: "Assignments, projects, and exams."
+- semester_number: 5
+  subjects:
+    - subject: "Digital Evidence Management"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Best practices for collecting, preserving, and presenting digital evidence."
+      assessments: "Case studies, mock trials, and exams."
+    - subject: "Reverse Engineering"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Analyzing software to understand its functionality and identify vulnerabilities."
+      assessments: "Labs, projects, and exams."
+    - subject: "Cyber Threat Intelligence"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Collecting, analyzing, and disseminating information about cyber threats."
+      assessments: "Reports, presentations, and participation."
+    - elective_name: "Cybersecurity Specialization"
+      options:
+        - subject: "Applied Cryptography"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Advanced cryptographic techniques and their applications in cybersecurity."
+          assessments: "Projects, exams, and presentations."
+        - subject: "Security Architecture and Design"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Designing and implementing secure computer systems and networks."
+          assessments: "Design projects, reports, and presentations."
+        - subject: "Wireless Network Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Security protocols and vulnerabilities in wireless networks."
+          assessments: "Labs, projects, and exams."
+        - subject: "Database Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Advanced techniques for securing databases and protecting sensitive data."
+          assessments: "Projects, exams, and reports."
+        - subject: "Blockchain Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Security aspects of blockchain technologies and cryptocurrencies."
+          assessments: "Research papers, presentations, and projects."
+    - elective_name: "Digital Forensics Specialization"
+      options:
+        - subject: "Advanced Digital Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "In-depth study of advanced digital forensics techniques."
+          assessments: "Case studies, projects, and reports."
+        - subject: "File System Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Analyzing file systems to recover and interpret digital evidence."
+          assessments: "Labs, projects, and exams."
+        - subject: "Memory Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Analyzing computer memory to uncover malicious activity."
+          assessments: "Labs, projects, and reports."
+        - subject: "E-Discovery"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Legal and technical aspects of electronic discovery."
+          assessments: "Assignments, case studies, and presentations."
+        - subject: "Multimedia Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Analyzing images, audio, and video for forensic investigations."
+          assessments: "Labs, projects, and reports."
+- semester_number: 6
+  subjects:
+    - subject: "Capstone Project in Cybersecurity"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Applying cybersecurity knowledge and skills to solve a real-world problem."
+      assessments: "Project proposal, progress reports, final report, and presentation."
+    - subject: "Capstone Project in Digital Forensics"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Applying digital forensics knowledge and skills to conduct a comprehensive investigation."
+      assessments: "Project proposal, progress reports, final report, and presentation."
+    - subject: "Cybersecurity Law and Policy"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "In-depth analysis of cybersecurity laws, regulations, and policies."
+      assessments: "Research papers, presentations, and class discussions."
+    - elective_name: "Emerging Technologies in Cybersecurity"
+      options:
+        - subject: "AI and Machine Learning for Cybersecurity"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Using AI and machine learning to enhance cybersecurity defenses."
+          assessments: "Projects, exams, and presentations."
+        - subject: "IoT Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Securing Internet of Things (IoT) devices and networks."
+          assessments: "Labs, projects, and reports."
+        - subject: "Quantum Cryptography"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Introduction to quantum cryptography and its potential impact on cybersecurity."
+          assessments: "Research papers, presentations, and class discussions."
+        - subject: "Cyber-Physical Systems Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Securing cyber-physical systems, such as industrial control systems."
+          assessments: "Projects, reports, and presentations."
+        - subject: "Autonomous Systems Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Securing autonomous vehicles and other autonomous systems."
+          assessments: "Research papers, projects, and class discussions."
+    - elective_name: "Advanced Topics in Digital Forensics"
+      options:
+        - subject: "Advanced Malware Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Advanced techniques for analyzing and reverse engineering malware."
+          assessments: "Labs, projects, and reports."
+        - subject: "Anti-Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Techniques used to hide or destroy digital evidence."
+          assessments: "Labs, projects, and reports."
+        - subject: "Network Intrusion Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Investigating network intrusions and identifying attackers."
+          assessments: "Case studies, projects, and reports."
+        - subject: "Cloud Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Forensic analysis of cloud computing environments."
+          assessments: "Labs, projects, and reports."
+        - subject: "Cross-Border Digital Investigations"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Legal and technical challenges of conducting digital investigations across international borders."
+          assessments: "Research papers, presentations, and case studies."

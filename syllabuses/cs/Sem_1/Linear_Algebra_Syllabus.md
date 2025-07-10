@@ -1,0 +1,1 @@
+** I am unable to generate the complete syllabus due to persistent parsing errors.
