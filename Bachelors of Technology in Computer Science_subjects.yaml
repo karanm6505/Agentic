@@ -1,0 +1,250 @@
+- semester_number: 1
+  subjects:
+    - subject: "Programming Fundamentals"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to programming concepts, data types, control structures, and basic algorithms."
+      assessments: "Coding assignments, quizzes, and a final exam."
+    - subject: "Discrete Mathematics for Computer Science"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Logic, sets, relations, functions, combinatorics, and graph theory with applications to computer science."
+      assessments: "Problem sets, midterm exam, and final exam."
+    - subject: "Digital Logic Design"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Boolean algebra, logic gates, combinational and sequential circuits, and basic computer architecture."
+      assessments: "Lab assignments, design projects, and exams."
+    - subject: "Calculus I"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Limits, derivatives, and integrals of single-variable functions with applications to engineering."
+      assessments: "Problem sets, quizzes, and exams."
+    - subject: "Introduction to Engineering and Design"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Overview of engineering disciplines, design process, teamwork, and communication skills."
+      assessments: "Design project, presentations, and reports."
+- semester_number: 2
+  subjects:
+    - subject: "Data Structures and Algorithms"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Fundamental data structures (arrays, linked lists, trees, graphs) and algorithms (sorting, searching) with complexity analysis."
+      assessments: "Coding assignments, projects, and exams."
+    - subject: "Object-Oriented Programming"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Object-oriented principles (encapsulation, inheritance, polymorphism) using a language like Java or C++."
+      assessments: "Coding projects, quizzes, and a final exam."
+    - subject: "Calculus II"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Techniques of integration, applications of integration, sequences, and series."
+      assessments: "Problem sets, quizzes, and exams."
+    - subject: "Linear Algebra"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Vectors, matrices, systems of linear equations, eigenvalues, and eigenvectors."
+      assessments: "Problem sets, midterm exam, and final exam."
+    - subject: "Probability and Statistics for Engineers"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Basic probability theory, random variables, distributions, and statistical inference with applications to engineering problems."
+      assessments: "Problem sets, quizzes, and exams."
+- semester_number: 3
+  subjects:
+    - subject: "Computer Architecture and Organization"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Organization and design of computer systems, including CPU, memory, and I/O, and performance evaluation."
+      assessments: "Design projects, simulations, and exams."
+    - subject: "Database Management Systems"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Database design, SQL, relational algebra, database normalization, and transaction management."
+      assessments: "Database design projects, SQL assignments, and exams."
+    - subject: "Operating Systems"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Operating system concepts, process management, memory management, file systems, and concurrency."
+      assessments: "Programming assignments, simulations, and exams."
+    - subject: "Software Engineering Principles"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Software development life cycle, requirements engineering, design patterns, testing, and project management."
+      assessments: "Group projects, design documents, and code reviews."
+    - subject: "Signals and Systems"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Continuous-time and discrete-time signals and systems, Fourier analysis, and Laplace transforms."
+      assessments: "Problem sets, lab assignments, and exams."
+- semester_number: 4
+  subjects:
+    - subject: "Design and Analysis of Algorithms"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Algorithm design techniques (divide-and-conquer, dynamic programming, greedy algorithms) and complexity analysis."
+      assessments: "Algorithm design projects, problem sets, and exams."
+    - subject: "Computer Networks"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Networking fundamentals, protocols, network architectures, and network security."
+      assessments: "Lab assignments, simulations, and exams."
+    - subject: "Theory of Computation"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Formal languages, automata theory, Turing machines, and computability."
+      assessments: "Problem sets, quizzes, and exams."
+    - subject: "Embedded Systems Design"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Embedded system design, microcontrollers, real-time operating systems, and interfacing with sensors and actuators."
+      assessments: "Lab assignments, programming projects, and exams."
+    - subject: "Numerical Methods"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Numerical techniques for solving mathematical problems, including root finding, interpolation, and numerical integration."
+      assessments: "Programming assignments, problem sets, and exams."
+- semester_number: 5
+  subjects:
+    - subject: "Artificial Intelligence"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Introduction to AI concepts, search algorithms, knowledge representation, reasoning, and machine learning."
+      assessments: "Programming assignments, projects, and exams."
+    - subject: "Software Architecture and Design"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Software architecture patterns, design principles, and UML modeling."
+      assessments: "Design projects, design documents, and code reviews."
+    - subject: "Computer Security"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Security threats, vulnerabilities, and countermeasures in computer systems and networks."
+      assessments: "Security audit project, assignments, and exams."
+    - elective_name: "Specialized Computing Electives"
+      options:
+        - subject: "Computer Graphics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Principles of computer graphics, 2D and 3D transformations, rendering, and animation."
+          assessments: "Programming projects, rendering assignments, and exams."
+        - subject: "Parallel and Distributed Computing"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Parallel computing architectures, programming models, and distributed systems concepts."
+          assessments: "Programming projects, simulations, and exams."
+        - subject: "Human-Computer Interaction"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Principles of user interface design, usability testing, and human factors."
+          assessments: "UI design projects, usability reports, and exams."
+        - subject: "Robotics and Automation"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Robotics principles, robot kinematics, control, and sensing."
+          assessments: "Robotics design and implementation projects."
+        - subject: "Game Development"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Game design principles, game engine programming, and game development tools."
+          assessments: "Game development projects."
+    - elective_name: "Data Science and Analytics Electives"
+      options:
+        - subject: "Machine Learning"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Supervised and unsupervised learning algorithms, model evaluation, and applications."
+          assessments: "Machine learning projects, assignments, and exams."
+        - subject: "Data Mining"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Data mining techniques, data preprocessing, and pattern discovery."
+          assessments: "Data mining projects, assignments, and exams."
+        - subject: "Big Data Analytics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Big data processing frameworks (Hadoop, Spark) and analytics techniques."
+          assessments: "Big data analytics projects, assignments, and exams."
+        - subject: "Data Visualization"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Techniques for visualizing data and creating interactive dashboards."
+          assessments: "Data visualization projects, assignments, and exams."
+        - subject: "Statistical Modeling and Analysis"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Statistical modeling techniques and data analysis using statistical software."
+          assessments: "Statistical modeling projects, assignments, and exams."
+- semester_number: 6
+  subjects:
+    - subject: "Software Project Management"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Software project planning, scheduling, risk management, and quality assurance."
+      assessments: "Project management plan, assignments, and exams."
+    - subject: "Ethics and Professional Practice in Computing"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Ethical and social issues in computing, professional responsibilities, and intellectual property."
+      assessments: "Case studies, essays, and presentations."
+    - subject: "Capstone Project"
+      level: "Undergraduate"
+      duration_weeks: 16
+      focus: "Design and implementation of a significant software or hardware project."
+      assessments: "Project proposal, progress reports, final project, and presentation."
+    - elective_name: "Networking and Cybersecurity Electives"
+      options:
+        - subject: "Network Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Network security protocols, firewalls, intrusion detection systems, and VPNs."
+          assessments: "Network security implementation projects."
+        - subject: "Wireless and Mobile Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Wireless network security protocols and mobile device security."
+          assessments: "Wireless security audit projects."
+        - subject: "Cryptography"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Cryptographic algorithms, protocols, and applications."
+          assessments: "Cryptography implementation projects."
+        - subject: "Cybersecurity Forensics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Cybersecurity incident response, digital forensics, and malware analysis."
+          assessments: "Cybersecurity incident investigation projects."
+        - subject: "Cloud Security"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Cloud security principles, cloud security tools, and cloud compliance."
+          assessments: "Cloud security implementation projects."
+    - elective_name: "Advanced Topics in Computer Science Electives"
+      options:
+        - subject: "Compiler Design"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Compiler construction principles, lexical analysis, parsing, and code generation."
+          assessments: "Compiler implementation project, written assignments, and exams."
+        - subject: "Distributed Systems"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Distributed systems concepts, architectures, and algorithms."
+          assessments: "Distributed system design projects."
+        - subject: "Quantum Computing"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Quantum computing concepts, quantum algorithms, and quantum information theory."
+          assessments: "Quantum computing simulations and projects."
+        - subject: "Bioinformatics"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Computational methods for analyzing biological data, genomics, and proteomics."
+          assessments: "Bioinformatics data analysis projects."
+        - subject: "Computer Vision"
+          level: "Undergraduate"
+          duration_weeks: 16
+          focus: "Computer vision techniques for image and video analysis."
+          assessments: "Computer vision projects."
